@@ -7,7 +7,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.champions-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.champion-preview {
+  border-radius: .5rem;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+}
+
+.champion-preview .champion-link {
+  text-decoration: none;
+}
+
+.champion-preview .name {
+  font-weight: bold;
+}
+
+.champion-preview img {
+  width: 100%;
 }
