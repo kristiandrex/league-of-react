@@ -1,30 +1,38 @@
-import { memo } from 'react';
-import { PREVIEW_URL } from 'settings';
-import { useDispatch, useSelector } from 'react-redux';
-import PropTypes from 'prop-types';
+import { useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import PropTypes from "prop-types";
 
-function ChampionPreview({ id }) {
-  const champion = useSelector((state) => state.champions[id]);
+function ChampionPreview({ id, index }) {
+  const champion = useSelector(
+    (state) => state.champions[id],
+    (A, B) => A.id === B.id
+  );
+
+  const ref = useRef(null);
   const dispatch = useDispatch();
-
-  const onClick = () => {
-    dispatch({ type: 'OPEN', payload: id });
-  };
+  const onClick = () => dispatch({ type: "OPEN", payload: { id, index } });
 
   return (
-    <div className='champion-preview' onClick={onClick}>
-      <img src={`${PREVIEW_URL}/${champion.image.full}`} alt={champion.name} />
-      <div className="name">{champion.name}</div>
-    </div>
+    <>
+      <div
+        className="champion-preview"
+        onClick={onClick}
+        ref={ref}
+      >
+        <img
+          src={`http://ddragon.leagueoflegends.com/cdn/11.1.1/img/champion/${champion.image.full}`}
+          alt={champion.name}
+          loading="lazy"
+        />
+        <span className="name">{champion.name}</span>
+      </div>
+    </>
   );
 }
 
 ChampionPreview.propTypes = {
-  id: PropTypes.string.isRequired
+  id: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired
 };
 
-function areEquals(prevProps, nextProps) {
-  return prevProps.id === nextProps.id;
-}
-
-export default memo(ChampionPreview, areEquals);
+export default ChampionPreview;

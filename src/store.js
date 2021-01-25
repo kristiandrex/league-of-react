@@ -1,30 +1,42 @@
-import { createStore } from 'redux';
+import { createStore } from "redux";
 
 const initialState = {
   champions: {},
   keys: [],
   current: null,
   limit: 10,
-  loaded: false
+  shouldObserve: false,
+  active: -1
 };
 
 function reducer(state, action) {
   switch (action.type) {
-    case 'LOAD': {
+    case "LOAD": {
       return {
         ...state,
         champions: action.payload,
-        keys: Object.keys(action.payload)
+        keys: Object.keys(action.payload),
+        shouldObserve: true
       };
     }
 
-    case 'OPEN': {
-      return { ...state, current: action.payload };
+    case "OPEN": {
+      const { id, index } = action.payload;
+
+      return {
+        ...state,
+        current: id,
+        active: index
+      };
     }
 
-    case 'INCREMENT': {
+    case "CLOSE": {
+      return { ...state, current: null };
+    }
+
+    case "INCREMENT": {
       if (state.limit >= state.keys.length) {
-        return { ...state, loaded: true };
+        return { ...state, shouldObserve: false };
       }
 
       return { ...state, limit: state.limit + 10 };

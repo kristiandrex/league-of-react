@@ -1,11 +1,11 @@
-import { Provider } from 'react-redux';
-import store from 'store';
-import ChampionsList from 'components/ChampionsList';
+import { Provider } from "react-redux";
+import store from "store";
+import Home from "components/Home";
 
 function App() {
   return (
     <Provider store={store}>
-      <ChampionsList />
+      <Home />
     </Provider>
   );
 }

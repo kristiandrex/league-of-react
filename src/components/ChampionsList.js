@@ -1,71 +1,54 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import ChampionPreview from 'components/ChampionPreview';
-import { JSON_URL } from 'settings';
-import { useDispatch, useSelector } from 'react-redux';
+import { Fragment, useEffect, useRef } from "react";
+import { useSelector } from "react-redux";
+import ChampionPreview from "components/ChampionPreview";
+import ChampionDetails from "components/ChampionDetails";
+import Observer from "components/Observer";
+
+const HEADER_SIZE = 75;
 
 function ChampionsList() {
-  const limit = useSelector((state) => state.limit);
-  const keys = useSelector((state) => state.keys);
-  const loaded = useSelector((state) => state.loaded);
+  const active = useSelector((state) => state.active);
+  const shouldObserve = useSelector((state) => state.shouldObserve);
+  const keys = useSelector(
+    (state) => state.keys.slice(0, state.limit),
+    (A, B) => A.length === B.length
+  );
 
-  const [loading, setLoading] = useState(true);
-  const [inView, setInView] = useState(false);
-  const ref = useRef(null);
-  const dispatch = useDispatch();
-
-  const lazyKeys = useMemo(() => {
-    return keys.slice(0, limit);
-  }, [limit, keys]);
-
-  const onObserve = useCallback((entries) => {
-    setInView(entries[0].isIntersecting);
-  }, []);
-
-  const observer = useMemo(() => {
-    return new IntersectionObserver(onObserve, { threshold: 1 });
-  }, [onObserve]);
+  const detailsRef = useRef(null);
 
   useEffect(() => {
-    fetch(JSON_URL)
-      .then((response) => response.json())
-      .then((champions) => {
-        dispatch({ type: 'LOAD', payload: champions.data });
-        setLoading(false);
-      })
-      .catch((error) => console.error(error));
-  }, [dispatch]);
+    if (active !== -1) {
+      window.scrollTo({
+        top: detailsRef.current.offsetTop - HEADER_SIZE,
+        behavior: "smooth",
+      });
+    }
+  }, [active]);
 
-  useEffect(() => {
-    if (loading) {
-      return;
+  const isRight = (i) => i % 2 !== 0;
+  const isThisOrNext = (i, active) => i === active || i === active + 1;
+
+  const list = keys.map((key, index) => {
+    if (isRight(index) && isThisOrNext(index, active)) {
+      return (
+        <Fragment key={key}>
+          <ChampionPreview id={key} index={index} />
+          <ChampionDetails ref={detailsRef} />
+        </Fragment>
+      );
     }
 
-    if (loaded) {
-      return;
-    }
-
-    observer.observe(ref.current);
-
-    return () => observer.disconnect();
-  }, [loading, observer, loaded]);
-
-  useEffect(() => {
-    if (inView) {
-      dispatch({ type: 'INCREMENT' });
-    }
-  }, [inView, dispatch]);
+    return <ChampionPreview key={key} id={key} index={index} />;
+  });
 
   return (
     <>
       <div className="champions-list">
-        {lazyKeys.map((key) => (
-          <ChampionPreview key={key} id={key} />
-        ))}
+        {list}
       </div>
-      {!loading && <div id="observer" ref={ref}></div>}
+      {shouldObserve && <Observer />}
     </>
   );
-
 }
 
 export default ChampionsList;

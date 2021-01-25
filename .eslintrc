@@ -5,9 +5,7 @@
     "node": true
   },
   "extends": [
-    "react-app",
-    "eslint:recommended",
-    "plugin:react/recommended"
+    "react-app"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -27,19 +25,14 @@
         "SwitchCase": 1
       }
     ],
-    "quotes": [
-      1,
-      "single"
-    ],
-    "semi": [
-      1,
-      "always"
-    ],
+    "quotes": [1, "double"],
+    "semi": [1, "always"],
     "no-unused-vars": "warn",
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "no-empty": "warn",
     "no-debugger": "off",
-    "react/prop-types": "warn"
+    "react/prop-types": "warn",
+    "jsx-quotes": [1, "prefer-double"]
   }
 }
