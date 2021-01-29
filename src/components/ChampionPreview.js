@@ -1,16 +1,15 @@
-import { useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { memo, useRef } from "react";
+import { useDispatch } from "react-redux";
 import PropTypes from "prop-types";
 
-function ChampionPreview({ id, index }) {
-  const champion = useSelector(
-    (state) => state.champions[id],
-    (A, B) => A.id === B.id
-  );
-
+function ChampionPreview({ champion, index }) {
   const ref = useRef(null);
   const dispatch = useDispatch();
-  const onClick = () => dispatch({ type: "OPEN", payload: { id, index } });
+
+  const onClick = () => dispatch({
+    type: "OPEN",
+    payload: index
+  });
 
   return (
     <>
@@ -31,8 +30,12 @@ function ChampionPreview({ id, index }) {
 }
 
 ChampionPreview.propTypes = {
-  id: PropTypes.string.isRequired,
+  champion: PropTypes.object.isRequired,
   index: PropTypes.number.isRequired
 };
 
-export default ChampionPreview;
+function areEquals(A, B) {
+  return A.champion.id === B.champion.id && A.index === B.index;
+}
+
+export default memo(ChampionPreview, areEquals);

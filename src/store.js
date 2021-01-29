@@ -1,12 +1,16 @@
 import { createStore } from "redux";
 
 const initialState = {
-  champions: {},
-  keys: [],
-  current: null,
+  champions: [],
+  indexActive: -1,
   limit: 10,
   shouldObserve: false,
-  active: -1
+  filter: "",
+  filterChampions: []
+};
+
+const filterChampions = (champions, filter) => {
+  return champions.filter((champion) => champion.name.toLowerCase().startsWith(filter));
 };
 
 function reducer(state, action) {
@@ -14,32 +18,41 @@ function reducer(state, action) {
     case "LOAD": {
       return {
         ...state,
-        champions: action.payload,
-        keys: Object.keys(action.payload),
+        champions: Object.values(action.payload),
         shouldObserve: true
       };
     }
 
     case "OPEN": {
-      const { id, index } = action.payload;
-
       return {
         ...state,
-        current: id,
-        active: index
+        indexActive: action.payload
       };
     }
 
-    case "CLOSE": {
-      return { ...state, current: null };
+    case "INCREMENT": {
+      return {
+        ...state,
+        limit: state.limit + 10
+      };
     }
 
-    case "INCREMENT": {
-      if (state.limit >= state.keys.length) {
-        return { ...state, shouldObserve: false };
-      }
+    case "FILTER": {
+      return {
+        ...state,
+        filter: action.payload,
+        filterChampions: filterChampions(state.champions, action.payload),
+        shouldObserve: false
+      };
+    }
 
-      return { ...state, limit: state.limit + 10 };
+    case "REMOVE_FILTER": {
+      return {
+        ...state,
+        filter: "",
+        filterChampions: [],
+        shouldObserve: true
+      };
     }
 
     default:

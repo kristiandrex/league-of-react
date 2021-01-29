@@ -3,7 +3,7 @@
   --LIGHT_GRAY: #393e46;
   --YELLOW: #ffd369;
   --GRAY: #eeeeee;
-  --HEADER_SIZE: 75px;
+  --NAV_SIZE: 75px;
 }
 
 body {
@@ -24,16 +24,81 @@ a {
   color: var(--GRAY);
 }
 
+svg {
+  height: 24px;
+  vertical-align: middle;
+  width: 24px;
+}
+
 header {
-  background-color: var(--YELLOW);
-  max-height: var(--HEADER_SIZE);
-  padding: 1rem;
   position: sticky;
   top: 0;
 }
 
-header h1 {
-  margin: 0;
+nav {
+  align-items: center;
+  background-color: var(--YELLOW);
+  box-sizing: border-box;
+  display: flex;
+  height: var(--NAV_SIZE);
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+nav a {
+  color: #fff;
+  vertical-align: middle;
+}
+
+nav .home-link {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav .items {
+  display: flex;
+  gap: 2rem;
+}
+
+nav .items .search-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+header .search-bar {
+  background-color: var(--LIGHT_GRAY);
+  border-bottom: 1px solid var(--DARK_GRAY);
+  padding: .75rem;
+}
+
+header .search-box {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  gap: .75rem;
+}
+
+header .search-box input {
+  border: none;
+  color: var(--LIGHT_GRAY);
+  display: block;
+  height: 100%;
+  outline: none;
+  padding: .5rem;
+  width: 100%;
+}
+
+header .search-box button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
 }
 
 main {
@@ -79,4 +144,10 @@ main {
 .champion-details img {
   width: 100%;
   border-radius: .5rem;
+}
+
+.champion-details .champion-title {
+  font-weight: bold;
+  margin-bottom: 0;
+  text-transform: uppercase;
 }

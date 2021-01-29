@@ -1,17 +1,16 @@
-import { useEffect} from "react";
+import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import ChampionsList from "components/ChampionsList";
 import Header from "components/Header";
-import { JSON_URL } from "settings";
+import loadFullData from "util/loadData";
 
 function Home() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch(JSON_URL)
-      .then((response) => response.json())
-      .then((champions) => {
-        dispatch({ type: "LOAD", payload: champions.data });
+    loadFullData()
+      .then((data) => {
+        dispatch({ type: "LOAD", payload: data });
       })
       .catch((error) => console.error(error));
   }, [dispatch]);
