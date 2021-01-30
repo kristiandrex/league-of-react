@@ -42,7 +42,8 @@ function reducer(state, action) {
         ...state,
         filter: action.payload,
         filterChampions: filterChampions(state.champions, action.payload),
-        shouldObserve: false
+        indexActive: -1,
+        shouldObserve: false,
       };
     }
 
@@ -51,6 +52,7 @@ function reducer(state, action) {
         ...state,
         filter: "",
         filterChampions: [],
+        indexActive: -1,
         shouldObserve: true
       };
     }

@@ -2,7 +2,13 @@ import { forwardRef } from "react";
 import { useSelector } from "react-redux";
 
 const ChampionDetails = forwardRef((props, ref) => {
-  const champion = useSelector((state) => state.champions[state.indexActive]);
+  const champion = useSelector((state) => {
+    if (state.filter !== "") {
+      return state.filterChampions[state.indexActive];
+    }
+
+    return state.champions[state.indexActive];
+  });
 
   return (
     <div className="champion-details" ref={ref}>

@@ -6,7 +6,7 @@ import Observer from "components/Observer";
 
 function ChampionsList() {
   const champions = useSelector((state) => {
-    if (state.filter !== "") {
+    if (state.filter.trim() !== "") {
       return state.filterChampions;
     }
 
