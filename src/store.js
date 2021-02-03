@@ -2,7 +2,7 @@ import { createStore } from "redux";
 
 const initialState = {
   champions: [],
-  indexActive: -1,
+  active: -1,
   limit: 10,
   shouldObserve: false,
   filter: "",
@@ -30,7 +30,7 @@ function reducer(state, action) {
     case "OPEN": {
       return {
         ...state,
-        indexActive: action.payload
+        active: action.payload
       };
     }
 
@@ -46,7 +46,7 @@ function reducer(state, action) {
         ...state,
         filter: action.payload,
         filterChampions: filterChampions(state.champions, action.payload),
-        indexActive: -1,
+        active: -1,
         shouldObserve: false,
       };
     }
@@ -56,7 +56,7 @@ function reducer(state, action) {
         ...state,
         filter: "",
         filterChampions: [],
-        indexActive: -1,
+        active: -1,
         shouldObserve: true
       };
     }

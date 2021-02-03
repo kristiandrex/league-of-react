@@ -13,9 +13,13 @@ function ChampionsList() {
     return state.champions.slice(0, state.limit);
   });
 
-  const active = useSelector((state) => state.indexActive);
+  const active = useSelector((state) => state.active);
 
   const shouldShowDetails = (index) => {
+    if (active === -1) {
+      return false;
+    }
+
     if (index % 2 === 0 && champions.length > 1) {
       return false;
     }
