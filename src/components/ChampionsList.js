@@ -13,13 +13,22 @@ function ChampionsList() {
     return state.champions.slice(0, state.limit);
   });
 
-  const indexActive = useSelector((state) => state.indexActive);
+  const active = useSelector((state) => state.indexActive);
 
-  const isRight = (index) => index % 2 !== 0;
-  const isThisOrNext = (index, active) => index === active || index === active + 1;
+  const shouldShowDetails = (index) => {
+    if (index % 2 === 0 && champions.length > 1) {
+      return false;
+    }
+
+    if (index !== active && index !== active + 1) {
+      return false;
+    }
+
+    return true;
+  };
 
   const list = champions.map((champion, index) => {
-    if (isRight(index) && isThisOrNext(index, indexActive)) {
+    if (shouldShowDetails(index)) {
       return (
         <Fragment key={champion.id}>
           <ChampionPreview champion={champion} index={index} />
@@ -28,16 +37,18 @@ function ChampionsList() {
       );
     }
 
-    return <ChampionPreview key={champion.id} champion={champion} index={index} />;
+    return (
+      <ChampionPreview key={champion.id} champion={champion} index={index} />
+    );
   });
 
   return (
-    <>
+    <main>
       <div className="champions-list">
         {list}
       </div>
       <Observer />
-    </>
+    </main>
   );
 }
 

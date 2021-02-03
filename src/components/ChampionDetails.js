@@ -3,11 +3,13 @@ import { useSelector } from "react-redux";
 
 const ChampionDetails = forwardRef((props, ref) => {
   const champion = useSelector((state) => {
+    const index = state.indexActive;
+
     if (state.filter !== "") {
-      return state.filterChampions[state.indexActive];
+      return state.filterChampions[index];
     }
 
-    return state.champions[state.indexActive];
+    return state.champions[index];
   });
 
   return (

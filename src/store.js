@@ -6,7 +6,8 @@ const initialState = {
   limit: 10,
   shouldObserve: false,
   filter: "",
-  filterChampions: []
+  filterChampions: [],
+  version: ""
 };
 
 const filterChampions = (champions, filter) => {
@@ -16,10 +17,13 @@ const filterChampions = (champions, filter) => {
 function reducer(state, action) {
   switch (action.type) {
     case "LOAD": {
+      const { champions, version } = action.payload;
+
       return {
         ...state,
-        champions: Object.values(action.payload),
-        shouldObserve: true
+        champions: Object.values(champions),
+        shouldObserve: true,
+        version
       };
     }
 

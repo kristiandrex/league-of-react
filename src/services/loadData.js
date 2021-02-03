@@ -1,19 +1,23 @@
-const { VERSIONS_URL } = require("util/settings");
+const VERSIONS_URL = "https://ddragon.leagueoflegends.com/api/versions.json";
 
-export async function getLastVersion() {
+async function getLastVersion() {
   const response = await fetch(VERSIONS_URL);
   const versions = await response.json();
   return versions[0];
 }
 
-export async function loadChampions(version) {
+async function loadChampions(version) {
   const response = await fetch(`http://ddragon.leagueoflegends.com/cdn/${version}/data/es_MX/champion.json`);
   const champions = await response.json();
   return champions.data;
 }
 
-export default async function loadFullData() {
+export default async function loadData() {
   const lastVersion = await getLastVersion();
-  return await loadChampions(lastVersion);
+  const champions = await loadChampions(lastVersion);
 
+  return {
+    champions,
+    version: lastVersion
+  };
 }
