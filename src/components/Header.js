@@ -1,15 +1,15 @@
-import { useState } from "react";
+import { useState, forwardRef } from "react";
 import { ReactComponent as GithubIcon } from "assets/github.svg";
 import { ReactComponent as SearchIcon } from "assets/search.svg";
 import Search from "components/Search";
 
-function Header() {
+const Header = forwardRef((props, ref) => {
   const [search, setSearch] = useState(false);
   const toggleSearch = () => setSearch((value) => !value);
 
   return (
     <header>
-      <nav>
+      <nav ref={ref}>
         <a href="/" className="home-link">League of React</a>
         <div className="items">
           <a
@@ -33,6 +33,8 @@ function Header() {
       {search && <Search />}
     </header>
   );
-}
+});
+
+Header.displayName = "Header";
 
 export default Header;

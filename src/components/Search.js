@@ -7,8 +7,10 @@ function Search() {
   const dispatch = useDispatch();
 
   const onChange = (event) => {
-    setValue(event.target.value);
-    dispatch({ type: "FILTER", payload: event.target.value });
+    const newValue = event.target.value;
+    
+    setValue(newValue);
+    dispatch({ type: "FILTER", payload: newValue });
   };
 
   const onClose = () => {

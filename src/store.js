@@ -34,6 +34,13 @@ function reducer(state, action) {
       };
     }
 
+    case "CLOSE": {
+      return {
+        ...state,
+        active: -1
+      };
+    }
+
     case "INCREMENT": {
       return {
         ...state,
@@ -58,6 +65,13 @@ function reducer(state, action) {
         filterChampions: [],
         active: -1,
         shouldObserve: true
+      };
+    }
+
+    case "STOP_OBSERVER": {
+      return {
+        ...state,
+        shouldObserve: false
       };
     }
 

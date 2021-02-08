@@ -19,6 +19,8 @@ function ChampionPreview({ champion, index }) {
         src={`http://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${champion.image.full}`}
         alt={champion.name}
         loading="lazy"
+        width="150"
+        height="150"
       />
       <span className="name">{champion.name}</span>
     </div>
