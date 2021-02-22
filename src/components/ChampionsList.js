@@ -1,15 +1,17 @@
-import { Fragment, useRef, forwardRef, useEffect, useCallback } from "react";
+import { Fragment, useRef, useEffect, useState } from "react";
 import { useSelector, } from "react-redux";
-import PropTypes from "prop-types";
 
 import ChampionPreview from "components/ChampionPreview";
 import ChampionDetails from "components/ChampionDetails";
 import Observer from "components/Observer";
 
-const ChampionsList = forwardRef(({ previewOffset, onScroll }, offsetRef) => {
+function ChampionsList() {
+  const [previewOffset, setPreviewOffset] = useState(0);
+  const detailsRef = useRef(null);
+
   const active = useSelector((state) => state.active);
   const version = useSelector((state) => state.version);
-  const detailsRef = useRef(null);
+  const offset = useSelector((state) => state.offset);
 
   const champions = useSelector((state) => {
     const { filter, filterChampions, champions, limit } = state;
@@ -21,29 +23,42 @@ const ChampionsList = forwardRef(({ previewOffset, onScroll }, offsetRef) => {
     return champions.slice(0, limit);
   });
 
-  const handleScrollTo = useCallback((value) => {
-    window.scrollTo({ top: value, behavior: "smooth" });
-  }, []);
-
+  /**
+   * Scroll to the details of the selected champion.
+   * When closing the details return to the previous offset.
+   * @param {number} offset - <nav> size.
+   */
   useEffect(() => {
     if (active !== -1) {
-      const totalOffset = detailsRef.current.offsetTop - offsetRef.current.offsetHeight;
+      const totalOffset = detailsRef.current.offsetTop - offset;
 
-      onScroll(window.scrollY);
-      handleScrollTo(totalOffset);
-      return () => handleScrollTo(previewOffset);
+      setPreviewOffset(window.scrollY);
+      window.scrollTo({ top: totalOffset, behavior: "smooth" });
+
+      return () => window.scrollTo({ top: previewOffset, behavior: "smooth" });
     }
-  }, [active, onScroll, previewOffset, handleScrollTo, offsetRef]);
+  }, [active, previewOffset, offset]);
 
+  /**
+   * Show the details of the selected champion in the correct position following the column layout.
+   * @param {number} index
+   * @returns {boolean} Show the details of the selected champion in the current position.
+   */
   const shouldShowDetails = (index) => {
     if (active === -1) {
       return false;
     }
 
+    /**
+     * There is more than one champion and the selected one is in the left column.
+     */
     if (index % 2 === 0 && champions.length > 1) {
       return false;
     }
 
+    /**
+     * This index and the following are different from the selected champion.
+     */
     if (index !== active && index !== active + 1) {
       return false;
     }
@@ -61,25 +76,18 @@ const ChampionsList = forwardRef(({ previewOffset, onScroll }, offsetRef) => {
       );
     }
 
-    return <ChampionPreview key={champion.id} champion={champion} index={index} />;
+    return (
+      <ChampionPreview key={champion.id} champion={champion} index={index} />
+    );
   });
 
   return (
     <main>
       <span className="version">Version: {version}</span>
-      <div className="champions-list">
-        {list}
-      </div>
+      <div className="champions-list">{list}</div>
       <Observer />
     </main>
   );
-});
-
-ChampionsList.displayName = "ChampionList";
-
-ChampionsList.propTypes = {
-  previewOffset: PropTypes.number.isRequired,
-  onScroll: PropTypes.func.isRequired
 };
 
 export default ChampionsList;

@@ -1,18 +1,16 @@
-import { memo, useRef } from "react";
+import { memo } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import PropTypes from "prop-types";
 
 function ChampionPreview({ champion, index }) {
   const version = useSelector((state) => state.version);
-  const ref = useRef(null);
-
+  
   const dispatch = useDispatch();
   const onClick = () => dispatch({ type: "OPEN", payload: index });
 
   return (
     <div
       className="champion-preview"
-      ref={ref}
       onClick={onClick}
     >
       <img

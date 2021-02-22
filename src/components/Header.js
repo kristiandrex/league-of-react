@@ -1,11 +1,22 @@
-import { useState, forwardRef } from "react";
+import { useEffect, useState, useRef } from "react";
+import { useDispatch } from "react-redux";
 import { ReactComponent as GithubIcon } from "assets/github.svg";
 import { ReactComponent as SearchIcon } from "assets/search.svg";
 import Search from "components/Search";
 
-const Header = forwardRef((props, ref) => {
+function Header() {
   const [search, setSearch] = useState(false);
+  const ref = useRef(null);
+
+  const dispatch = useDispatch();
   const toggleSearch = () => setSearch((value) => !value);
+
+  useEffect(() => {
+    dispatch({
+      type: "SET_OFFSET",
+      payload: ref.current.offsetHeight
+    });
+  }, [dispatch]);
 
   return (
     <header>
@@ -33,8 +44,6 @@ const Header = forwardRef((props, ref) => {
       {search && <Search />}
     </header>
   );
-});
-
-Header.displayName = "Header";
+};
 
 export default Header;

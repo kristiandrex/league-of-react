@@ -7,7 +7,8 @@ const initialState = {
   shouldObserve: false,
   filter: "",
   filterChampions: [],
-  version: ""
+  version: "",
+  offset: 0
 };
 
 const filterChampions = (champions, filter) => {
@@ -72,6 +73,13 @@ function reducer(state, action) {
       return {
         ...state,
         shouldObserve: false
+      };
+    }
+
+    case "SET_OFFSET": {
+      return {
+        ...state,
+        offset: action.payload
       };
     }
 
