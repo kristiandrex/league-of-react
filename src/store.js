@@ -2,13 +2,12 @@ import { createStore } from "redux";
 
 const initialState = {
   champions: [],
-  active: -1,
+  selected: -1,
   limit: 10,
   shouldObserve: false,
   filter: "",
-  filterChampions: [],
+  filteredChampions: [],
   version: "",
-  offset: 0
 };
 
 const filterChampions = (champions, filter) => {
@@ -31,14 +30,14 @@ function reducer(state, action) {
     case "OPEN": {
       return {
         ...state,
-        active: action.payload
+        selected: action.payload
       };
     }
 
     case "CLOSE": {
       return {
         ...state,
-        active: -1
+        selected: -1
       };
     }
 
@@ -53,8 +52,8 @@ function reducer(state, action) {
       return {
         ...state,
         filter: action.payload,
-        filterChampions: filterChampions(state.champions, action.payload),
-        active: -1,
+        filteredChampions: filterChampions(state.champions, action.payload),
+        selected: -1,
         shouldObserve: false,
       };
     }
@@ -63,8 +62,8 @@ function reducer(state, action) {
       return {
         ...state,
         filter: "",
-        filterChampions: [],
-        active: -1,
+        filteredChampions: [],
+        selected: -1,
         shouldObserve: true
       };
     }
@@ -73,13 +72,6 @@ function reducer(state, action) {
       return {
         ...state,
         shouldObserve: false
-      };
-    }
-
-    case "SET_OFFSET": {
-      return {
-        ...state,
-        offset: action.payload
       };
     }
 

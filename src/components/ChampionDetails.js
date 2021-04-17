@@ -1,37 +1,52 @@
-import { forwardRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useEffect, useRef, useState } from "react";
+import { useSelector } from "react-redux";
+import { CSSTransition } from "react-transition-group";
 
-const ChampionDetails = forwardRef((props, ref) => {
+function ChampionDetails() {
   const champion = useSelector((state) => {
-    const { filter, active, filterChampions, champions } = state;
+    const { filter, selected, filteredChampions, champions } = state;
 
-    if (filter !== "") {
-      return filterChampions[active];
+    if (selected === -1) {
+      return null;
     }
 
-    return champions[active];
+    return filter !== "" ? filteredChampions[selected] : champions[selected];
   });
 
-  const dispatch = useDispatch();
-  const handleClose = () => dispatch({ type: "CLOSE" });
+  const [storedChampion, setStoredChampion] = useState(champion);
+  const nodeRef = useRef(null);
+
+  useEffect(() => {
+    if (champion !== null) {
+      setStoredChampion(champion);
+    }
+  }, [champion]);
 
   return (
-    <div className="champion-details" ref={ref}>
-      <button className="btn-close" onClick={handleClose}>Cerrar</button>
-      <div className="card">
-        <h1 className="name">{champion.name}</h1>
-        <img
-          className="image"
-          src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg`}
-          alt={champion.name}
-          height="560"
-        />
-        <p className="champion-title">{champion.title}</p>
+    <CSSTransition
+      classNames="champion-details"
+      in={champion !== null}
+      timeout={300}
+      nodeRef={nodeRef}
+      onExited={() => setStoredChampion(null)}
+      unmountOnExit
+    >
+      <div className="champion-details" ref={nodeRef}>
+        {storedChampion !== null && (
+          <>
+            <h1 className="name">{storedChampion.name}</h1>
+            <img
+              className="image"
+              src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${storedChampion.id}_0.jpg`}
+              alt={storedChampion.name}
+              height="560"
+            />
+            <p className="champion-title">{storedChampion.title}</p>
+          </>
+        )}
       </div>
-    </div>
+    </CSSTransition>
   );
-});
-
-ChampionDetails.displayName = "ChampionDetails";
+}
 
 export default ChampionDetails;

@@ -5,7 +5,9 @@
     "node": true
   },
   "extends": [
-    "react-app"
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -17,22 +19,35 @@
   "plugins": [
     "react"
   ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "rules": {
     "indent": [
-      "warn",
+      "error",
       2,
       {
         "SwitchCase": 1
       }
     ],
-    "quotes": [1, "double"],
-    "semi": [1, "always"],
-    "no-unused-vars": "warn",
-    "react/jsx-uses-react": "off",
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
     "react/react-in-jsx-scope": "off",
-    "no-empty": "warn",
-    "no-debugger": "off",
-    "react/prop-types": "warn",
-    "jsx-quotes": [1, "prefer-double"]
+    "eol-last": [
+      "error",
+      "always"
+    ]
   }
 }

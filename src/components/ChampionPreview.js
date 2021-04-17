@@ -1,17 +1,19 @@
-import { memo } from "react";
+import { memo, useCallback } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import PropTypes from "prop-types";
 
 function ChampionPreview({ champion, index }) {
   const version = useSelector((state) => state.version);
-  
   const dispatch = useDispatch();
-  const onClick = () => dispatch({ type: "OPEN", payload: index });
+  const handleClick = useCallback(
+    () => dispatch({ type: "OPEN", payload: index }),
+    [dispatch, index]
+  );
 
   return (
     <div
       className="champion-preview"
-      onClick={onClick}
+      onClick={handleClick}
     >
       <img
         src={`http://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${champion.image.full}`}

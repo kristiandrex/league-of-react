@@ -4,10 +4,15 @@ import { useDispatch, useSelector } from "react-redux";
 function Observer() {
   const [inView, setInView] = useState(false);
   const shouldObserve = useSelector((state) => state.shouldObserve);
-  const shouldStop = useSelector((state) => state.limit >= state.champions.length);
+  const shouldDisconnect = useSelector((state) => state.limit >= state.champions.length);
 
-  const onObserve = useCallback((entries) => setInView(entries[0].isIntersecting), []);
-  const observer = useMemo(() => new IntersectionObserver(onObserve, { threshold: 1 }), [onObserve]);
+  const callback = useCallback((entries) => {
+    setInView(entries[0].isIntersecting);
+  }, []);
+
+  const observer = useMemo(() => {
+    return new IntersectionObserver(callback, { threshold: 1 });
+  }, [callback]);
 
   const ref = useRef(null);
   const dispatch = useDispatch();
@@ -17,21 +22,20 @@ function Observer() {
       return;
     }
 
+    if (shouldDisconnect) {
+      observer.disconnect();
+    }
+
     observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, [observer, shouldObserve]);
+  }, [observer, shouldObserve, shouldDisconnect]);
 
   useEffect(() => {
     if (inView) {
-      if (shouldStop) {
-        return dispatch({ type: "STOP_OBSERVER" });
-      }
-
       dispatch({ type: "INCREMENT" });
     }
-  }, [inView, shouldStop, dispatch]);
+  }, [inView, dispatch]);
 
   return <div id="observer" ref={ref}></div>;
-};
+}
 
 export default Observer;

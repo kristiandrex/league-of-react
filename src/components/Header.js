@@ -1,26 +1,29 @@
-import { useEffect, useState, useRef } from "react";
+import { useCallback } from "react";
 import { useDispatch } from "react-redux";
+import useToggle from "hooks/useToggle";
+import { ReactComponent as ArrowLeft } from "assets/arrow-left.svg";
 import { ReactComponent as GithubIcon } from "assets/github.svg";
 import { ReactComponent as SearchIcon } from "assets/search.svg";
 import Search from "components/Search";
 
 function Header() {
-  const [search, setSearch] = useState(false);
-  const ref = useRef(null);
-
+  const [showSearch, toggleShowSearch] = useToggle(false);
   const dispatch = useDispatch();
-  const toggleSearch = () => setSearch((value) => !value);
 
-  useEffect(() => {
-    dispatch({
-      type: "SET_OFFSET",
-      payload: ref.current.offsetHeight
-    });
+  const handleClose = useCallback(() => {
+    dispatch({ type: "CLOSE" });
   }, [dispatch]);
 
   return (
     <header>
-      <nav ref={ref}>
+      <nav>
+        <button
+          className="show-on-selected"
+          onClick={handleClose}
+          aria-label="Volver"
+        >
+          <ArrowLeft />
+        </button>
         <a href="/" className="home-link">League of React</a>
         <div className="items">
           <a
@@ -33,17 +36,17 @@ function Header() {
             <GithubIcon className="github-icon" />
           </a>
           <button
-            onClick={toggleSearch}
-            className="search-btn"
+            className="hide-on-selected"
             aria-label="Buscar"
+            onClick={toggleShowSearch}
           >
-            <SearchIcon className="search-icon" />
+            <SearchIcon />
           </button>
         </div>
       </nav>
-      {search && <Search />}
+      {showSearch && <Search />}
     </header>
   );
-};
+}
 
 export default Header;
