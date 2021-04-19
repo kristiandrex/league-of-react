@@ -12,7 +12,8 @@
     "react-scripts": "4.0.1",
     "react-transition-group": "^4.4.1",
     "redux": "^4.0.5",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "wouter": "^2.7.4"
   },
   "scripts": {
     "start": "react-scripts start",

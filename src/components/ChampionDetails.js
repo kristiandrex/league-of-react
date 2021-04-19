@@ -4,13 +4,8 @@ import { CSSTransition } from "react-transition-group";
 
 function ChampionDetails() {
   const champion = useSelector((state) => {
-    const { filter, selected, filteredChampions, champions } = state;
-
-    if (selected === -1) {
-      return null;
-    }
-
-    return filter !== "" ? filteredChampions[selected] : champions[selected];
+    const { selected, champions } = state;
+    return selected !== null ? champions[selected] : null;
   });
 
   const [storedChampion, setStoredChampion] = useState(champion);
@@ -32,7 +27,7 @@ function ChampionDetails() {
       unmountOnExit
     >
       <div className="champion-details" ref={nodeRef}>
-        {storedChampion !== null && (
+        {storedChampion && (
           <>
             <h1 className="name">{storedChampion.name}</h1>
             <img

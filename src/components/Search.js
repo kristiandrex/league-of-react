@@ -1,41 +1,30 @@
-import { useCallback, useState } from "react";
+import { useSelector } from "react-redux";
 import { ReactComponent as CloseIcon } from "assets/close.svg";
 import { useDispatch } from "react-redux";
 
 function Search() {
-  const [value, setValue] = useState("");
+  const value = useSelector((state) => state.filter);
   const dispatch = useDispatch();
 
-  const onChange = useCallback((event) => {
-    const newValue = event.target.value;
+  const handleChange = (event) => dispatch({ type: "FILTER", payload: event.target.value });
+  const handleClose = () => dispatch({ type: "REMOVE_FILTER" });
 
-    setValue(newValue);
-    dispatch({ type: "FILTER", payload: newValue });
-  }, [dispatch]);
-
-  const onClose = useCallback(() => {
-    setValue("");
-    dispatch({ type: "REMOVE_FILTER" });
-  }, [dispatch]);
-
-  const showClose = value.trim() !== "";
+  const showBtnClose = value.trim() !== "";
 
   return (
-    <div className="search hide-on-selected">
+    <div className="search">
       <input
         type="text"
         value={value}
-        onChange={onChange}
+        onChange={handleChange}
         placeholder="Buscar campeón"
         aria-label="Buscar campeón"
       />
-      {
-        showClose && (
-          <button onClick={onClose}>
-            <CloseIcon />
-          </button>
-        )
-      }
+      {showBtnClose && (
+        <button onClick={handleClose}>
+          <CloseIcon />
+        </button>
+      )}
     </div>
   );
 }

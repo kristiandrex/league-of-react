@@ -43,11 +43,6 @@ svg {
   width: 24px;
 }
 
-#app.hide-details .show-on-selected,
-#app.show-details .hide-on-selected {
-  display: none;
-}
-
 header {
   position: sticky;
   top: 0;
@@ -114,10 +109,13 @@ main {
 }
 
 .champions-list {
+  position: absolute;  
+  left: 0;
+  top: 0;
   height: 100%;
+  width: 100%;
   overflow-y: auto;
   padding: 1rem;
-  transition: var(--TRANSITION);
 }
 
 .champions-list .version {
@@ -130,7 +128,25 @@ main {
   padding: .5rem .75rem;
 }
 
-.grid {
+.champions-list-enter {
+  left: -100%;
+}
+
+.champions-list-enter-active {
+  left: 0;
+  transition: var(--TRANSITION);
+}
+
+.champions-list-exit {
+  left: 0;
+}
+
+.champions-list-exit-active {
+  left: -100%;
+  transition: var(--TRANSITION);
+}
+
+.champions-list .grid {
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr 1fr;
@@ -150,11 +166,8 @@ main {
   font-weight: bold;
 }
 
-#app.show-details .champions-list {
-  transform: translateX(-100%);
-}
-
 .champion-details {
+  background-color: var(--DARK_GRAY);
   border-radius: 0 0 .5rem .5rem;
   height: 100%;
   left: 0;
@@ -183,13 +196,16 @@ main {
 .champion-details-enter {
   left: 100%;
 }
+
 .champion-details-enter-active {
   left: 0;
   transition: var(--TRANSITION);
 }
+
 .champion-details-exit {
   left: 0;
 }
+
 .champion-details-exit-active {
   left: 100%;
   transition: var(--TRANSITION);

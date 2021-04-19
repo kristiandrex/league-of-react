@@ -1,30 +1,31 @@
-import { useCallback } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "wouter";
 import useToggle from "hooks/useToggle";
+import Search from "components/Search";
 import { ReactComponent as ArrowLeft } from "assets/arrow-left.svg";
 import { ReactComponent as GithubIcon } from "assets/github.svg";
 import { ReactComponent as SearchIcon } from "assets/search.svg";
-import Search from "components/Search";
 
 function Header() {
   const [showSearch, toggleShowSearch] = useToggle(false);
-  const dispatch = useDispatch();
+  const selected = useSelector((state) => state.selected !== null);
 
-  const handleClose = useCallback(() => {
-    dispatch({ type: "CLOSE" });
-  }, [dispatch]);
+  const dispatch = useDispatch();
+  const handleClose = () => dispatch({ type: "CLOSE" });
 
   return (
     <header>
       <nav>
-        <button
-          className="show-on-selected"
-          onClick={handleClose}
-          aria-label="Volver"
-        >
-          <ArrowLeft />
-        </button>
-        <a href="/" className="home-link">League of React</a>
+        {selected && (
+          <Link href="/" onClick={handleClose}>
+            <a aria-label="Volver">
+              <ArrowLeft />
+            </a>
+          </Link>
+        )}
+        <a href="/" className="home-link">
+          League of React
+        </a>
         <div className="items">
           <a
             href="https://github.com/kristiandrex/league-of-react"
@@ -35,16 +36,17 @@ function Header() {
           >
             <GithubIcon className="github-icon" />
           </a>
-          <button
-            className="hide-on-selected"
-            aria-label="Buscar"
-            onClick={toggleShowSearch}
-          >
-            <SearchIcon />
-          </button>
+          {!selected && (
+            <button
+              aria-label="Buscar"
+              onClick={toggleShowSearch}
+            >
+              <SearchIcon />
+            </button>
+          )}
         </div>
       </nav>
-      {showSearch && <Search />}
+      {showSearch && !selected && <Search />}
     </header>
   );
 }

@@ -1,39 +1,40 @@
-import { memo, useCallback } from "react";
+import { memo } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import PropTypes from "prop-types";
+import { Link } from "wouter";
 
-function ChampionPreview({ champion, index }) {
+function ChampionPreview({ id }) {
   const version = useSelector((state) => state.version);
+  const champion = useSelector((state) => state.champions[id]);
   const dispatch = useDispatch();
-  const handleClick = useCallback(
-    () => dispatch({ type: "OPEN", payload: index }),
-    [dispatch, index]
-  );
+
+  const handleClick = () => dispatch({ type: "OPEN", payload: id });
 
   return (
     <div
       className="champion-preview"
       onClick={handleClick}
     >
-      <img
-        src={`http://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${champion.image.full}`}
-        alt={champion.name}
-        loading="lazy"
-        width="150"
-        height="150"
-      />
-      <span className="name">{champion.name}</span>
+      <Link to={`/${champion.id}`}>
+        <img
+          src={`http://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${champion.image.full}`}
+          alt={champion.name}
+          loading="lazy"
+          width="150"
+          height="150"
+        />
+        <span className="name">{champion.name}</span>
+      </Link>
     </div>
   );
 }
 
 ChampionPreview.propTypes = {
-  champion: PropTypes.object.isRequired,
-  index: PropTypes.number.isRequired
+  id: PropTypes.string.isRequired
 };
 
 function areEquals(A, B) {
-  return A.champion.id === B.champion.id && A.index === B.index;
+  return A.id === B.id && A.index === B.index;
 }
 
 export default memo(ChampionPreview, areEquals);

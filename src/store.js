@@ -2,7 +2,8 @@ import { createStore } from "redux";
 
 const initialState = {
   champions: [],
-  selected: -1,
+  keys: [],
+  selected: null,
   limit: 10,
   shouldObserve: false,
   filter: "",
@@ -10,8 +11,8 @@ const initialState = {
   version: "",
 };
 
-const filterChampions = (champions, filter) => {
-  return champions.filter((champion) => champion.name.toLowerCase().startsWith(filter));
+const filterChampions = (keys, filter) => {
+  return keys.filter((key) => key.toLowerCase().startsWith(filter));
 };
 
 function reducer(state, action) {
@@ -21,7 +22,8 @@ function reducer(state, action) {
 
       return {
         ...state,
-        champions: Object.values(champions),
+        champions: champions,
+        keys: Object.keys(champions),
         shouldObserve: true,
         version
       };
@@ -37,7 +39,7 @@ function reducer(state, action) {
     case "CLOSE": {
       return {
         ...state,
-        selected: -1
+        selected: null
       };
     }
 
@@ -52,8 +54,8 @@ function reducer(state, action) {
       return {
         ...state,
         filter: action.payload,
-        filteredChampions: filterChampions(state.champions, action.payload),
-        selected: -1,
+        filteredChampions: filterChampions(state.keys, action.payload),
+        selected: null,
         shouldObserve: false,
       };
     }
@@ -63,7 +65,7 @@ function reducer(state, action) {
         ...state,
         filter: "",
         filteredChampions: [],
-        selected: -1,
+        selected: null,
         shouldObserve: true
       };
     }
