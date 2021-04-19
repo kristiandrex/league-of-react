@@ -5,13 +5,12 @@ const initialState = {
   keys: [],
   selected: null,
   limit: 10,
-  shouldObserve: false,
   filter: "",
-  filteredChampions: [],
+  filteredKeys: [],
   version: "",
 };
 
-const filterChampions = (keys, filter) => {
+const filterKeys = (keys, filter) => {
   return keys.filter((key) => key.toLowerCase().startsWith(filter));
 };
 
@@ -22,9 +21,8 @@ function reducer(state, action) {
 
       return {
         ...state,
-        champions: champions,
+        champions,
         keys: Object.keys(champions),
-        shouldObserve: true,
         version
       };
     }
@@ -54,9 +52,8 @@ function reducer(state, action) {
       return {
         ...state,
         filter: action.payload,
-        filteredChampions: filterChampions(state.keys, action.payload),
+        filteredKeys: filterKeys(state.keys, action.payload),
         selected: null,
-        shouldObserve: false,
       };
     }
 
@@ -64,16 +61,8 @@ function reducer(state, action) {
       return {
         ...state,
         filter: "",
-        filteredChampions: [],
+        filteredKeys: [],
         selected: null,
-        shouldObserve: true
-      };
-    }
-
-    case "STOP_OBSERVER": {
-      return {
-        ...state,
-        shouldObserve: false
       };
     }
 

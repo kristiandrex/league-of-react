@@ -34,7 +34,7 @@ ChampionPreview.propTypes = {
 };
 
 function areEquals(A, B) {
-  return A.id === B.id && A.index === B.index;
+  return A.id === B.id;
 }
 
 export default memo(ChampionPreview, areEquals);

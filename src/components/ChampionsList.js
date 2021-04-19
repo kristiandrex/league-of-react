@@ -7,11 +7,12 @@ import Observer from "components/Observer";
 function ChampionsList() {
   const version = useSelector((state) => state.version);
   const selected = useSelector((state) => state.selected !== null);
+  const searching = useSelector((state) => state.filter !== "");
   const champions = useSelector((state) => {
-    const { filter, filteredChampions, keys, limit } = state;
+    const { filter, filteredKeys, keys, limit } = state;
 
     if (filter.trim() !== "") {
-      return filteredChampions;
+      return filteredKeys;
     }
 
     return keys.slice(0, limit);
@@ -30,7 +31,7 @@ function ChampionsList() {
       <div className="champions-list" ref={nodeRef}>
         <span className="version">Version: {version}</span>
         <div className="grid">{list}</div>
-        <Observer />
+        {!searching && <Observer />}
       </div>
     </CSSTransition>
   );

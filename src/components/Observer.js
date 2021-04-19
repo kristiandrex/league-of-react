@@ -1,39 +1,23 @@
-import { useRef, useCallback, useMemo, useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import useObserver from "hooks/useObserver";
 
 function Observer() {
-  const [inView, setInView] = useState(false);
-  const shouldObserve = useSelector((state) => state.shouldObserve);
-  const shouldDisconnect = useSelector((state) => state.limit >= state.champions.length);
-
-  const callback = useCallback((entries) => {
-    setInView(entries[0].isIntersecting);
-  }, []);
-
-  const observer = useMemo(() => {
-    return new IntersectionObserver(callback, { threshold: 1 });
-  }, [callback]);
-
-  const ref = useRef(null);
+  const { inView, ref, disconnect } = useObserver({ threshold: 1 });
+  const shouldDisconnect = useSelector((state) => state.limit >= state.keys.length);
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    if (!shouldObserve) {
-      return;
-    }
-
-    if (shouldDisconnect) {
-      observer.disconnect();
-    }
-
-    observer.observe(ref.current);
-  }, [observer, shouldObserve, shouldDisconnect]);
 
   useEffect(() => {
     if (inView) {
       dispatch({ type: "INCREMENT" });
     }
   }, [inView, dispatch]);
+
+  useEffect(() => {
+    if (shouldDisconnect) {
+      disconnect();
+    }
+  }, [shouldDisconnect, disconnect]);
 
   return <div id="observer" ref={ref}></div>;
 }
