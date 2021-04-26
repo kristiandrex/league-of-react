@@ -2,17 +2,16 @@ import { createStore } from "redux";
 
 const initialState = {
   champions: [],
-  keys: [],
   selected: null,
-  limit: 10,
   filter: "",
-  filteredKeys: [],
-  version: "",
+  filteredChampions: [],
+  limit: 10,
+  version: ""
 };
 
-const filterKeys = (keys, filter) => {
-  return keys.filter((key) => key.toLowerCase().startsWith(filter));
-};
+function filterChampions(champions, filter) {
+  return champions.filter((champion) => champion.name.toLowerCase().startsWith(filter));
+}
 
 function reducer(state, action) {
   switch (action.type) {
@@ -22,7 +21,6 @@ function reducer(state, action) {
       return {
         ...state,
         champions,
-        keys: Object.keys(champions),
         version
       };
     }
@@ -52,7 +50,7 @@ function reducer(state, action) {
       return {
         ...state,
         filter: action.payload,
-        filteredKeys: filterKeys(state.keys, action.payload),
+        filteredChampions: filterChampions(state.champions, action.payload),
         selected: null,
       };
     }
@@ -61,7 +59,7 @@ function reducer(state, action) {
       return {
         ...state,
         filter: "",
-        filteredKeys: [],
+        filteredChampions: [],
         selected: null,
       };
     }
@@ -74,7 +72,7 @@ function reducer(state, action) {
 const store = createStore(
   reducer,
   initialState,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__({ trace: true })
 );
 
 export default store;

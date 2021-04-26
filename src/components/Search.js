@@ -4,12 +4,11 @@ import { useDispatch } from "react-redux";
 
 function Search() {
   const value = useSelector((state) => state.filter);
-  const dispatch = useDispatch();
+  const showButtonClose = value.trim() !== "";
 
+  const dispatch = useDispatch();
   const handleChange = (event) => dispatch({ type: "FILTER", payload: event.target.value });
   const handleClose = () => dispatch({ type: "REMOVE_FILTER" });
-
-  const showBtnClose = value.trim() !== "";
 
   return (
     <div className="search">
@@ -20,7 +19,7 @@ function Search() {
         placeholder="Buscar campeón"
         aria-label="Buscar campeón"
       />
-      {showBtnClose && (
+      {showButtonClose && (
         <button onClick={handleClose}>
           <CloseIcon />
         </button>

@@ -7,19 +7,16 @@ import Observer from "components/Observer";
 function ChampionsList() {
   const version = useSelector((state) => state.version);
   const selected = useSelector((state) => state.selected !== null);
-  const searching = useSelector((state) => state.filter !== "");
+  const searching = useSelector((state) => state.filter.trim() !== "");
   const champions = useSelector((state) => {
-    const { filter, filteredKeys, keys, limit } = state;
-
-    if (filter.trim() !== "") {
-      return filteredKeys;
-    }
-
-    return keys.slice(0, limit);
+    const { champions, filter, filteredChampions, limit } = state;
+    return filter.trim() !== "" ? filteredChampions : champions.slice(0, limit);
   });
 
   const nodeRef = useRef(null);
-  const list = champions.map((id) => <ChampionPreview key={id} id={id} />);
+  const list = champions.map((champion) => (
+    <ChampionPreview key={champion.id} champion={champion} />
+  ));
 
   return (
     <CSSTransition

@@ -5,14 +5,14 @@ import { CSSTransition } from "react-transition-group";
 function ChampionDetails() {
   const champion = useSelector((state) => {
     const { selected, champions } = state;
-    return selected !== null ? champions[selected] : null;
+    return champions.find((champion) => champion.id === selected);
   });
 
   const [storedChampion, setStoredChampion] = useState(champion);
   const nodeRef = useRef(null);
 
   useEffect(() => {
-    if (champion !== null) {
+    if (champion !== undefined) {
       setStoredChampion(champion);
     }
   }, [champion]);
@@ -20,7 +20,7 @@ function ChampionDetails() {
   return (
     <CSSTransition
       classNames="champion-details"
-      in={champion !== null}
+      in={champion !== undefined}
       timeout={300}
       nodeRef={nodeRef}
       onExited={() => setStoredChampion(null)}

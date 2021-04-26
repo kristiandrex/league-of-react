@@ -4,7 +4,7 @@ import useObserver from "hooks/useObserver";
 
 function Observer() {
   const { inView, ref, disconnect } = useObserver({ threshold: 1 });
-  const shouldDisconnect = useSelector((state) => state.limit >= state.keys.length);
+  const shouldDisconnect = useSelector((state) => state.limit >= state.champions.length);
   const dispatch = useDispatch();
 
   useEffect(() => {

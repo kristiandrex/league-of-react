@@ -79,7 +79,7 @@ header .search {
   background-color: var(--LIGHT_GRAY);
   border-bottom: 1px solid var(--DARK_GRAY);
   padding: .75rem;
-  height: 100%;
+  position: absolute;
   width: 100%;
   gap: .75rem;
 }

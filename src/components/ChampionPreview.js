@@ -1,20 +1,13 @@
 import { memo } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import PropTypes from "prop-types";
+import { useSelector } from "react-redux";
 import { Link } from "wouter";
+import PropTypes from "prop-types";
 
-function ChampionPreview({ id }) {
+function ChampionPreview({ champion }) {
   const version = useSelector((state) => state.version);
-  const champion = useSelector((state) => state.champions[id]);
-  const dispatch = useDispatch();
-
-  const handleClick = () => dispatch({ type: "OPEN", payload: id });
 
   return (
-    <div
-      className="champion-preview"
-      onClick={handleClick}
-    >
+    <div className="champion-preview">
       <Link to={`/${champion.id}`}>
         <img
           src={`http://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${champion.image.full}`}
@@ -30,11 +23,11 @@ function ChampionPreview({ id }) {
 }
 
 ChampionPreview.propTypes = {
-  id: PropTypes.string.isRequired
+  champion: PropTypes.object.isRequired
 };
 
 function areEquals(A, B) {
-  return A.id === B.id;
+  return A.champion.id === B.champion.id;
 }
 
 export default memo(ChampionPreview, areEquals);

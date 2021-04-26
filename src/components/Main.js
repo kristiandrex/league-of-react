@@ -6,14 +6,15 @@ import ChampionDetails from "components/ChampionDetails";
 import loadData from "services/loadData";
 
 function Home() {
-  const [matchDetails, params] = useRoute("/:champion");
+  const [matchChampion, params] = useRoute("/:champion");
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (matchDetails) {
-      dispatch({ type: "OPEN", payload: params.champion });
-    }
-  }, [dispatch, matchDetails, params]);
+    dispatch({
+      type: matchChampion ? "OPEN" : "CLOSE",
+      payload: params?.champion
+    });
+  }, [dispatch, matchChampion, params]);
 
   useEffect(() => {
     loadData()
