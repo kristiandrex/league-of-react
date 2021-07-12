@@ -14,7 +14,7 @@ getLatestVersion()
     const filename = `${latestVersion}.json`;
 
     if (fs.existsSync(`public/data/${filename}`)) {
-      core.setOutput("shoulUpdate", false);
+      core.setOutput("shouldUpdate ", false);
       console.log(`Version ${latestVersion} it's already downloaded.`);
       return;
     }
@@ -39,7 +39,7 @@ getLatestVersion()
 
     // Adding latest version to Github Actions output.
     core.setOutput("latestVersion", latestVersion);
-    core.setOutput("shoulUpdate", true);
+    core.setOutput("shouldUpdate", true);
 
     console.log(`Version ${latestVersion} successfully downloaded.`);
   })
