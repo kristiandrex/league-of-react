@@ -17,4 +17,4 @@ jobs:
     - name: Download latest version
       id: download-latest
       run: npm run download
-    - run: echo ${{ steps.download-latest.outputs.shouldUpdate }
+    - run: echo ${{ steps.download-latest.outputs.shouldUpdate }}
