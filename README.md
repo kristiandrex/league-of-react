@@ -4,11 +4,11 @@ Visualize the League of Legends champions.
 
 ## Screenshots
 
-**Homepage**
-![Homepage screenshot](/docs/images/home.png)
+<div>
+<img src="docs/images/home.png" height="570">
+<img src="docs/images/champion.png" height="570">
+</div>
 
-**Champion page**
-![Champion page screenshot](/docs/images/champion.png)
 
 ## Upcoming features
 
