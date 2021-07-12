@@ -1,29 +1,33 @@
 import { useState, useCallback, useEffect, useRef } from "react";
 
 function useObserver(options) {
-  const elementRef = useRef();
-  const observerRef = useRef();
   const [inView, setInView] = useState(false);
-
-  const callback = useCallback((entries) => {
-    setInView(entries[0].isIntersecting);
-  }, []);
+  const element = useRef();
+  const observer = useRef();
 
   useEffect(() => {
-    observerRef.current = new IntersectionObserver(callback, options);
-    observerRef.current.observe(elementRef.current);
-    return () => observerRef.current.disconnect();
-  }, [callback, options]);
+    const { skip, ...restOptions } = options;
+
+    if (skip) {
+      return;
+    }
+
+    const callback = (entries) => {
+      setInView(entries[0].isIntersecting);
+    };
+
+    observer.current = new IntersectionObserver(callback, restOptions);
+    observer.current.observe(element.current);
+    return () => observer.current.disconnect();
+  }, [options]);
 
   const disconnect = useCallback(() => {
-    if (observerRef.current) {
-      observerRef.current.disconnect();
-    }
+    observer.current?.disconnect();
   }, []);
 
   return {
     inView,
-    ref: elementRef,
+    ref: element,
     disconnect
   };
 }
