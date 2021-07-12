@@ -1,0 +1,116 @@
+:root {
+  --DARK_GRAY: #222831;
+  --LIGHT_GRAY: #393e46;
+  --YELLOW: #ffd369;
+  --GRAY: #eeeeee;
+  --TRANSITION: all 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--DARK_GRAY);
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.app {
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--GRAY);
+}
+
+svg {
+  height: 24px;
+  vertical-align: middle;
+  width: 24px;
+}
+
+nav {
+  align-items: center;
+  background-color: var(--YELLOW);
+  display: flex;
+  height: 3.5rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+nav a {
+  color: #fff;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+nav .home-link {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav .items {
+  display: flex;
+  gap: 2rem;
+}
+
+main {
+  padding: 1rem 5%;
+  text-align: center;
+}
+
+main .version {
+  background-color: var(--YELLOW);
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 50rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+main .grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.thumbnail {
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+}
+
+.thumbnail img {
+  border-radius: 0.5rem;
+}
+
+.thumbnail .name {
+  font-weight: bold;
+}
+
+.details {
+  text-align: center;
+  padding: 1rem;
+}
+
+.details .name {
+  margin: 0;
+}
+
+.details .title {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+}
+
+.details img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
