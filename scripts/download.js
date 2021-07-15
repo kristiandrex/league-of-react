@@ -3,44 +3,51 @@ const fetch = require("node-fetch");
 const core = require("@actions/core");
 
 async function getLatestVersion() {
-  const VERSIONS_URL = "https://ddragon.leagueoflegends.com/api/versions.json";
-  const response = await fetch(VERSIONS_URL);
+  const url = "https://ddragon.leagueoflegends.com/api/versions.json";
+  const response = await fetch(url);
   const versions = await response.json();
   return versions[0];
 }
 
 getLatestVersion()
   .then(async (latestVersion) => {
-    const filename = `${latestVersion}.json`;
+    if (!fs.existsSync("public/data/version.txt")) {
+      return await download(latestVersion);
+    }
 
-    if (fs.existsSync(`public/data/${filename}`)) {
+    const currentVersion = fs.readFileSync(version).toString();
+
+    if (latestVersion === currentVersion) {
       core.setOutput("shouldUpdate ", false);
       console.log(`Version ${latestVersion} it's already downloaded.`);
       return;
     }
 
-    console.log(`Downloading version ${latestVersion}...`);
-
-    const url = `http://ddragon.leagueoflegends.com/cdn/${latestVersion}/data/es_MX/champion.json`;
-    const response = await fetch(url);
-    const json = await response.json();
-
-    const data = JSON.stringify({
-      version: json.version,
-      champions: Object.values(json.data)
-    });
-
-    await fs.promises.writeFile(`public/data/${filename}`, data);
-
-    await fs.promises.copyFile(
-      `public/data/${filename}`,
-      "public/data/latest.json"
-    );
-
-    // Adding latest version to Github Actions output.
-    core.setOutput("latestVersion", latestVersion);
-    core.setOutput("shouldUpdate", true);
-
-    console.log(`Version ${latestVersion} successfully downloaded.`);
+    await download(latestVersion);
   })
-  .catch((error) => console.error(error));
+  .catch((error) => {
+    console.error("There was an error");
+    console.error(error);
+  });
+
+async function download(version) {
+  console.log(`Downloading version ${version}...`);
+
+  const url = `http://ddragon.leagueoflegends.com/cdn/${version}/data/es_MX/champion.json`;
+  const response = await fetch(url);
+  const json = await response.json();
+
+  const data = JSON.stringify({
+    version,
+    champions: Object.values(json.data)
+  });
+
+  await fs.promises.writeFile("public/data/latest.json", data);
+  await fs.promises.writeFile("public/data/version.txt", version);
+
+  // Adding latest version to Github Actions output.
+  core.setOutput("latestVersion", version);
+  core.setOutput("shouldUpdate", true);
+
+  console.log(`Version ${version} successfully downloaded.`);
+}
