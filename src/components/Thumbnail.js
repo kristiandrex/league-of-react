@@ -21,4 +21,4 @@ function Thumbnail({ champion }) {
   );
 }
 
-export default memo(Thumbnail);
+export default memo(Thumbnail, (a, b) => a.champion.name === b.champion.name);
