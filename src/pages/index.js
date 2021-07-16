@@ -4,6 +4,7 @@ import Champions from "@/components/Champions";
 
 import { useRouter } from "next/dist/client/router";
 import Search from "@/components/Search";
+import FilterChampions from "@/components/FilterChampions";
 
 export async function getStaticProps() {
   const { version, champions } = require("@/public/data/latest.json");
@@ -19,10 +20,9 @@ export async function getStaticProps() {
 function Home({ version, initialChampions }) {
   const [champions, setChampions] = useState(initialChampions);
   const router = useRouter();
+  const search = router.query.search;
 
   useEffect(() => {
-    const search = router.query.search;
-
     if (!search) {
       return setChampions(initialChampions);
     }
@@ -32,7 +32,7 @@ function Home({ version, initialChampions }) {
     );
 
     setChampions(filter);
-  }, [router.query.search, initialChampions]);
+  }, [search, initialChampions]);
 
   const handleSearch = (value) => {
     router.push({
@@ -51,7 +51,11 @@ function Home({ version, initialChampions }) {
       <main>
         <Search onChange={handleSearch} />
         <span className="version">Versión: {version}</span>
-        <Champions champions={champions} />
+        {search ? (
+          <FilterChampions champions={champions} />
+        ) : (
+          <Champions champions={champions} />
+        )}
       </main>
     </>
   );
