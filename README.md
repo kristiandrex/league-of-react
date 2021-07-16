@@ -12,7 +12,7 @@ Visualize the League of Legends champions.
 ## Upcoming features
 
 - [x] Desktop design.
-- [ ] Filter champions.
+- [x] Filter champions.
 - [ ] Extract the color of the champions.
 
 ## Resources
