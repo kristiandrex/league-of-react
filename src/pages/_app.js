@@ -1,10 +1,10 @@
-import Header from "@/components/Header";
+import Nav from "@/components/Nav";
 import "@/styles/index.css";
 
 function App({ Component, pageProps }) {
   return (
     <div className="app">
-      <Header />
+      <Nav />
       <Component {...pageProps} />
     </div>
   );

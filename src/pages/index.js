@@ -18,7 +18,10 @@ function Home({ version, champions }) {
       <Head>
         <title>League of React</title>
       </Head>
-      <Champions version={version} champions={champions} />
+      <main>
+        <span className="version">Versión: {version}</span>
+        <Champions champions={champions} />
+      </main>
     </>
   );
 }

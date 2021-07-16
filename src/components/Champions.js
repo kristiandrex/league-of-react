@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import useObserver from "@/hooks/useObserver";
 import Thumbnail from "./Thumbnail";
 
-function Champions({ version, champions }) {
+function Champions({ champions }) {
   const [limit, setLimit] = useState(10);
   const { ref, inView } = useObserver({ skip: limit >= champions.length });
 
@@ -20,13 +20,10 @@ function Champions({ version, champions }) {
   }
 
   return (
-    <main>
-      <span className="version">Versión: {version}</span>
-      <div className="grid">
-        {items}
-        <div className="observer" ref={ref}></div>
-      </div>
-    </main>
+    <section className="champions">
+      <div className="grid">{items}</div>
+      <div className="observer" ref={ref}></div>
+    </section>
   );
 }
 
