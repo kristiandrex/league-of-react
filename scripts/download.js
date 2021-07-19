@@ -15,7 +15,7 @@ getLatestVersion()
       return await download(latestVersion);
     }
 
-    const currentVersion = fs.readFileSync(version).toString();
+    const currentVersion = fs.readFileSync(latestVersion).toString();
 
     if (latestVersion === currentVersion) {
       core.setOutput("shouldUpdate ", false);
