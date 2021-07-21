@@ -20,7 +20,7 @@ jobs:
       - name: Commit latest version
         if: ${{ steps.download-latest.outputs.shouldUpdate }}
         env:
-          LATEST_VERSION: steps.download-latest.outputs.latestVersion
+          LATEST_VERSION: ${{ steps.download-latest.outputs.latestVersion }}
         run: |
           git config user.name kristiandrex
           git config user.email cristiandrestorres@gmail.com
