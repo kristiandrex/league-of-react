@@ -15,10 +15,12 @@ getLatestVersion()
       return await download(latestVersion);
     }
 
-    const currentVersion = fs.readFileSync(latestVersion).toString();
+    const currentVersion = fs
+      .readFileSync("public/data/version.txt")
+      .toString();
 
     if (latestVersion === currentVersion) {
-      core.setOutput("shouldUpdate ", false);
+      core.setOutput("should-update", false);
       console.log(`Version ${latestVersion} it's already downloaded.`);
       return;
     }
@@ -46,8 +48,8 @@ async function download(version) {
   await fs.promises.writeFile("public/data/version.txt", version);
 
   // Adding latest version to Github Actions output.
-  core.setOutput("latestVersion", version);
-  core.setOutput("shouldUpdate", true);
+  core.setOutput("latest-version", version);
+  core.setOutput("should-update", true);
 
   console.log(`Version ${version} successfully downloaded.`);
 }
