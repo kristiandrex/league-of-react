@@ -42,6 +42,7 @@ function Champion({ champion }) {
             <span className="title">{champion.title}</span>
           </div>
           <div className="images">
+            {champion.new && <span className="badge">NUEVO</span>}
             <img
               src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg`}
               alt={champion.name}

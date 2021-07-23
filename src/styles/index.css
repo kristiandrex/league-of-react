@@ -32,6 +32,16 @@ svg {
   width: 24px;
 }
 
+.badge {
+  background-color: var(--YELLOW);
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+  border-radius: 0.5rem 0 0 0;
+  position: absolute;
+  z-index: 1;
+}
+
 nav {
   align-items: center;
   background-color: var(--YELLOW);
@@ -116,6 +126,7 @@ main .grid {
   cursor: pointer;
   overflow: hidden;
   text-align: center;
+  position: relative;
 }
 
 .thumbnail img {

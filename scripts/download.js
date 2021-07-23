@@ -2,54 +2,86 @@ const fs = require("fs");
 const fetch = require("node-fetch");
 const core = require("@actions/core");
 
-async function getLatestVersion() {
+async function getVersions() {
   const url = "https://ddragon.leagueoflegends.com/api/versions.json";
   const response = await fetch(url);
   const versions = await response.json();
-  return versions[0];
+
+  return {
+    latest: versions[0],
+    previous: versions[1]
+  };
 }
 
-getLatestVersion()
-  .then(async (latestVersion) => {
-    if (!fs.existsSync("public/data/version.txt")) {
-      return await download(latestVersion);
+getVersions()
+  .then(async (versions) => {
+    const latestVersion = versions.latest;
+    const versionFile = "public/data/version.txt";
+
+    if (!fs.existsSync(versionFile)) {
+      return await download(versions);
     }
 
-    const currentVersion = fs
-      .readFileSync("public/data/version.txt")
-      .toString();
+    const currentVersion = fs.readFileSync(versionFile).toString();
 
-    if (latestVersion === currentVersion) {
-      core.setOutput("should-update", false);
-      console.log(`Version ${latestVersion} it's already downloaded.`);
-      return;
+    if (latestVersion !== currentVersion) {
+      return await download(versions);
     }
 
-    await download(latestVersion);
+    core.setOutput("should-update", false);
+    console.log(`Version ${latestVersion} it's already downloaded.`);
   })
   .catch((error) => {
     console.error("There was an error");
     console.error(error);
   });
 
-async function download(version) {
-  console.log(`Downloading version ${version}...`);
+async function download(versions) {
+  const latestVersion = versions.latest;
 
-  const url = `http://ddragon.leagueoflegends.com/cdn/${version}/data/es_MX/champion.json`;
-  const response = await fetch(url);
-  const json = await response.json();
+  console.log(`Downloading version ${latestVersion}...`);
 
-  const data = JSON.stringify({
-    version,
-    champions: Object.values(json.data)
-  });
+  const latestData = await fetchVersion(latestVersion);
+  const previousData = await fetchVersion(versions.previous);
 
-  await fs.promises.writeFile("public/data/latest.json", data);
-  await fs.promises.writeFile("public/data/version.txt", version);
+  const newChampion = latestData.champions.find(
+    (champion, index) => previousData.champions[index]?.id !== champion.id
+  );
 
-  // Adding latest version to Github Actions output.
-  core.setOutput("latest-version", version);
+  const modifiedChampions = latestData.champions.map((champion) => ({
+    new: champion.id === newChampion?.id,
+    ...champion
+  }));
+
+  latestData.champions = modifiedChampions;
+
+  await fs.promises.writeFile(
+    "public/data/latest.json",
+    JSON.stringify(latestData)
+  );
+
+  await fs.promises.writeFile("public/data/version.txt", latestVersion);
+
+  // Add latest version to Github Actions output.
+  core.setOutput("latest-version", latestVersion);
   core.setOutput("should-update", true);
 
-  console.log(`Version ${version} successfully downloaded.`);
+  console.log(`Version ${latestVersion} successfully downloaded.`);
+}
+
+function getVersionUrl(version) {
+  return `http://ddragon.leagueoflegends.com/cdn/${version}/data/es_MX/champion.json`;
+}
+
+function formatData(payload) {
+  return {
+    version: payload.version,
+    champions: Object.values(payload.data)
+  };
+}
+
+async function fetchVersion(version) {
+  const response = await fetch(getVersionUrl(version));
+  const json = await response.json();
+  return formatData(json);
 }

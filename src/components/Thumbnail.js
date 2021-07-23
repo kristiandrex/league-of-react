@@ -7,6 +7,7 @@ function Thumbnail({ champion }) {
     <div className="thumbnail">
       <Link href={`/champions/${champion.id}`}>
         <a>
+          {champion.new && <span className="badge">NUEVO</span>}
           <Image
             src={`https://ddragon.leagueoflegends.com/cdn/${champion.version}/img/champion/${champion.image.full}`}
             alt={champion.name}
