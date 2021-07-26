@@ -18,7 +18,7 @@ jobs:
         id: download-latest
         run: npm run download
       - name: Commit latest version
-        if: ${{ steps.download-latest.outputs.should-update }}
+        if: ${{ steps.download-latest.outputs.should-update == 'true' }}
         env:
           LATEST_VERSION: ${{ steps.download-latest.outputs.latest-version }}
         run: |
@@ -27,3 +27,4 @@ jobs:
           git add -A
           git commit -m "Update to LoL version $LATEST_VERSION"
           git push
+
