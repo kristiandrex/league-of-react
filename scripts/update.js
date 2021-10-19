@@ -1,6 +1,9 @@
 const fs = require("fs");
 const fetch = require("node-fetch");
+const chalk = require("chalk");
 const core = require("@actions/core");
+
+const screenshots = require("./screenshots");
 
 async function getVersions() {
   const url = "https://ddragon.leagueoflegends.com/api/versions.json";
@@ -19,27 +22,30 @@ getVersions()
     const versionFile = "public/data/version.txt";
 
     if (!fs.existsSync(versionFile)) {
-      return await download(versions);
+      return await update(versions);
     }
 
     const currentVersion = fs.readFileSync(versionFile).toString();
 
     if (latestVersion !== currentVersion) {
-      return await download(versions);
+      return await update(versions);
     }
 
     core.setOutput("should-update", false);
-    console.log(`Version ${latestVersion} it's already downloaded.`);
+
+    console.log(
+      chalk.yellow(`Version ${latestVersion} it's already downloaded.`)
+    );
   })
   .catch((error) => {
     console.error("There was an error");
     console.error(error);
   });
 
-async function download(versions) {
+async function update(versions) {
   const latestVersion = versions.latest;
 
-  console.log(`Downloading version ${latestVersion}...`);
+  console.log(chalk.cyan(`Downloading version ${latestVersion}...`));
 
   const latestData = await fetchVersion(latestVersion);
   const previousData = await fetchVersion(versions.previous);
@@ -54,19 +60,15 @@ async function download(versions) {
   }));
 
   latestData.champions = modifiedChampions;
-
-  await fs.promises.writeFile(
-    "public/data/latest.json",
-    JSON.stringify(latestData)
-  );
-
+  const stringData = JSON.stringify(latestData);
+  await fs.promises.writeFile("public/data/latest.json", stringData);
   await fs.promises.writeFile("public/data/version.txt", latestVersion);
+  console.log(chalk.green(`Version ${latestVersion} successfully downloaded.`));
 
-  // Add latest version to Github Actions output.
+  await screenshots();
+
   core.setOutput("latest-version", latestVersion);
   core.setOutput("should-update", true);
-
-  console.log(`Version ${latestVersion} successfully downloaded.`);
 }
 
 function getVersionUrl(version) {

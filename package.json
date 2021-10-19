@@ -8,12 +8,12 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
+    "chalk": "^4.1.2",
     "next": "^11.0.1",
     "node-fetch": "^2.6.1",
-    "node-vibrant": "^3.1.6",
+    "puppeteer": "^10.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-transition-group": "^4.4.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -21,7 +21,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "download": "node scripts/download.js"
+    "update": "node scripts/update.js"
   },
   "browserslist": {
     "production": [
