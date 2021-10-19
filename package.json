@@ -1,6 +1,6 @@
 {
   "name": "league-of-react",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "private": true,
   "dependencies": {
     "@actions/core": "^1.4.0",
