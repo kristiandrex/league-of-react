@@ -61,7 +61,7 @@ async function takeScreenshots() {
     const page = await browser.newPage();
 
     console.log(chalk.cyan("Taking screenshot on /"));
-    await page.goto("http://localhost:3000", {
+    await page.goto("http://127.0.0.1:3000/", {
       waitUntil: "networkidle0",
       timeout: 0
     });
@@ -69,7 +69,7 @@ async function takeScreenshots() {
     console.log(chalk.green("Screenshot successfully"));
 
     console.log(chalk.cyan(`Taking screenshot on /champions/${champion}`));
-    await page.goto(`http://localhost:3000/champions/${champion}`, {
+    await page.goto(`http://127.0.0.1:3000/champions/${champion}`, {
       waitUntil: "networkidle0",
       timeout: 0
     });
