@@ -1,9 +1,12 @@
 import Link from "next/link";
 import GithubIcon from "@/assets/github.svg";
+import { useTheme } from "@/context/theme";
 
 function Header() {
+  const { theme } = useTheme();
+
   return (
-    <nav>
+    <nav style={{ backgroundColor: theme }}>
       <Link href="/">
         <a className="home-link">League of React</a>
       </Link>

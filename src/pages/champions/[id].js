@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { useEffect } from "react";
+import { useTheme } from "@/context/theme";
 
 export async function getStaticPaths() {
   const { champions } = require("@/public/data/latest.json");
@@ -34,13 +36,21 @@ export async function getStaticProps(context) {
  * @returns
  */
 function Champion({ champion }) {
+  const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setTheme(champion.color);
+  }, [setTheme, champion.color]);
+
   return (
     <>
       <Head>
         <title>{champion.name} - League of React</title>
       </Head>
       <main>
-        <span className="version">Versión: {champion.version}</span>
+        <span className="version" style={{ backgroundColor: theme }}>
+          Versión: {champion.version}
+        </span>
         <section className="champion">
           <div className="details">
             <h1 className="name">{champion.name}</h1>

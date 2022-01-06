@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
-import Champions from "@/components/Champions";
+import { useRouter } from "next/router";
 
-import { useRouter } from "next/dist/client/router";
+import Champions from "@/components/Champions";
 import Search from "@/components/Search";
 import FilterChampions from "@/components/FilterChampions";
+import { useTheme } from "@/context/theme";
 
 export async function getStaticProps() {
   const { version, champions } = require("@/public/data/latest.json");
@@ -20,9 +21,13 @@ export async function getStaticProps() {
 function Home({ version, initialChampions }) {
   const [champions, setChampions] = useState(initialChampions);
   const router = useRouter();
+  const { setTheme } = useTheme();
+
   const search = router.query.search;
 
   useEffect(() => {
+    setTheme();
+
     if (!search) {
       return setChampions(initialChampions);
     }
@@ -32,7 +37,7 @@ function Home({ version, initialChampions }) {
     );
 
     setChampions(filter);
-  }, [search, initialChampions]);
+  }, [search, initialChampions, setTheme]);
 
   const handleSearch = (value) => {
     router.push({

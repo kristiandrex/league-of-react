@@ -40,6 +40,7 @@ svg {
   border-radius: 0.5rem 0 0 0;
   position: absolute;
   z-index: 1;
+  transition: all 0.2s ease-out;
 }
 
 nav {
@@ -49,6 +50,7 @@ nav {
   height: 3.5rem;
   justify-content: space-between;
   padding: 1rem;
+  transition: all 0.2s ease-out;
 }
 
 nav a {
