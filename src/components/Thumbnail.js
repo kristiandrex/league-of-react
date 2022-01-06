@@ -2,6 +2,10 @@ import { memo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+/**
+ *
+ * @param {{champion: IChampion}} props
+ */
 function Thumbnail({ champion }) {
   return (
     <div className="thumbnail">
@@ -9,7 +13,7 @@ function Thumbnail({ champion }) {
         <a>
           {champion.new && <span className="badge">NUEVO</span>}
           <Image
-            src={`https://ddragon.leagueoflegends.com/cdn/${champion.version}/img/champion/${champion.image.full}`}
+            src={champion.images.thumbnail}
             alt={champion.name}
             loading="lazy"
             width="150"

@@ -15,13 +15,16 @@ jobs:
           node-version: "14"
           cache: "npm"
       - run: npm install
-      - name: Update to latest version
-        id: update
+      - name: Download latest version
+        id: download
         run: npm run update
-      - name: Commit latest version
-        if: ${{ steps.update.outputs.should-update == 'true' }}
         env:
-          LATEST_VERSION: ${{ steps.update.outputs.latest-version }}
+          LATEST_VERSION: ${{ steps.download.outputs.latest-version }}
+      - name: Take screenshots
+        if: steps.download.outputs.should-update == 'true'
+        run: npm run screenshots
+      - name: Commit latest version
+        if: steps.download.outputs.should-update == 'true'
         run: |
           git config user.name kristiandrex
           git config user.email cristiandrestorres@gmail.com

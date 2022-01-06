@@ -28,6 +28,11 @@ export async function getStaticProps(context) {
   };
 }
 
+/**
+ *
+ * @param {{champion: IChampion}} props
+ * @returns
+ */
 function Champion({ champion }) {
   return (
     <>
@@ -44,7 +49,7 @@ function Champion({ champion }) {
           <div className="images">
             {champion.new && <span className="badge">NUEVO</span>}
             <img
-              src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg`}
+              src={champion.images.portrait}
               alt={champion.name}
               className="vertical"
               loading="lazy"
@@ -52,7 +57,7 @@ function Champion({ champion }) {
             />
 
             <img
-              src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`}
+              src={champion.images.landscape}
               alt={champion.name}
               className="horizontal"
               loading="lazy"

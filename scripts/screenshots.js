@@ -4,10 +4,7 @@ const chalk = require("chalk");
 
 const { champions } = require("../public/data/latest.json");
 
-async function init() {
-  console.log(chalk.cyan("Running server"));
-  const child = spawn("npm", ["run", "dev"]);
-
+function logProcess(child) {
   child.stdout.on("data", (data) => {
     console.log(data.toString());
   });
@@ -15,18 +12,38 @@ async function init() {
   child.stderr.on("data", (data) => {
     console.error(data.toString());
   });
+}
 
-  child.on("error", (error) => {
-    console.error(`error: ${error.message}`);
+async function run() {
+  await new Promise((resolve, reject) => {
+    const build = spawn("npm", ["run", "build"]);
+
+    build.on("close", (code) => {
+      console.log(`Build process close all stdio with code ${code}`);
+      resolve(code);
+    });
+
+    build.on("error", (err) => {
+      reject(err);
+    });
+
+    logProcess(build);
   });
 
-  child.on("close", (code) => {
-    console.log(`Child process exited with code ${code}`);
+  const server = spawn("npm", ["run", "start"]);
+
+  server.on("close", (code) => {
+    console.log(`Build process close all stdio with code ${code}`);
   });
+
+  server.on("error", (err) => {
+    console.error(err);
+  });
+
+  logProcess(server);
 
   await takeScreenshots();
-
-  child.kill("SIGTERM");
+  server.kill();
   process.exit(0);
 }
 
@@ -44,13 +61,17 @@ async function takeScreenshots() {
     const page = await browser.newPage();
 
     console.log(chalk.cyan("Taking screenshot on /"));
-    await page.goto("http://localhost:3000", { waitUntil: "networkidle2" });
+    await page.goto("http://localhost:3000", {
+      waitUntil: "networkidle0",
+      timeout: 0
+    });
     await page.screenshot({ path: "docs/images/home.png" });
     console.log(chalk.green("Screenshot successfully"));
 
     console.log(chalk.cyan(`Taking screenshot on /champions/${champion}`));
     await page.goto(`http://localhost:3000/champions/${champion}`, {
-      waitUntil: "networkidle2"
+      waitUntil: "networkidle0",
+      timeout: 0
     });
 
     await page.screenshot({ path: "docs/images/champion.png" });
@@ -63,8 +84,8 @@ async function takeScreenshots() {
 }
 
 function getRandomChampion() {
-  const index = Math.floor(Math.random() * (champions.length + 1));
+  const index = Math.floor(Math.random() * champions.length);
   return champions[index].id;
 }
 
-module.exports = init;
+run();

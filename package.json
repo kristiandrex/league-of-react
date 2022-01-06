@@ -11,6 +11,7 @@
     "chalk": "^4.1.2",
     "next": "^11.0.1",
     "node-fetch": "^2.6.1",
+    "node-vibrant": "^3.2.1-alpha.1",
     "puppeteer": "^10.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -21,7 +22,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "update": "node scripts/update.js"
+    "update": "node scripts/update.js",
+    "screenshot": "node scripts/screenshots.js"
   },
   "browserslist": {
     "production": [
