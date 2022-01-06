@@ -16,7 +16,7 @@ function logProcess(child) {
 
 async function run() {
   await new Promise((resolve, reject) => {
-    const build = spawn("npm", ["run", "build"]);
+    const build = spawn("npm.cmd", ["run", "build"]);
 
     build.on("close", (code) => {
       console.log(`Build process close all stdio with code ${code}`);
@@ -30,7 +30,7 @@ async function run() {
     logProcess(build);
   });
 
-  const server = spawn("npm", ["run", "start"]);
+  const server = spawn("npm.cmd", ["run", "start"]);
 
   server.on("close", (code) => {
     console.log(`Build process close all stdio with code ${code}`);
@@ -61,7 +61,7 @@ async function takeScreenshots() {
     const page = await browser.newPage();
 
     console.log(chalk.cyan("Taking screenshot on /"));
-    await page.goto("http://127.0.0.1:3000/", {
+    await page.goto("http://localhost:3000", {
       waitUntil: "networkidle0",
       timeout: 0
     });
@@ -69,7 +69,7 @@ async function takeScreenshots() {
     console.log(chalk.green("Screenshot successfully"));
 
     console.log(chalk.cyan(`Taking screenshot on /champions/${champion}`));
-    await page.goto(`http://127.0.0.1:3000/champions/${champion}`, {
+    await page.goto(`http://localhost:3000/champions/${champion}`, {
       waitUntil: "networkidle0",
       timeout: 0
     });
