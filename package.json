@@ -23,7 +23,7 @@
     "start": "next start",
     "lint": "next lint",
     "update": "node scripts/update.js",
-    "screenshot": "node scripts/screenshots.js"
+    "screenshots": "node scripts/screenshots.js"
   },
   "browserslist": {
     "production": [
