@@ -1,3 +1,5 @@
+"use strict";
+
 const Vibrant = require("node-vibrant");
 
 /**

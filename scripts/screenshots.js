@@ -1,56 +1,22 @@
-const { spawn } = require("child_process");
+"use strict";
+
 const puppeteer = require("puppeteer");
 const chalk = require("chalk");
+const core = require("@actions/core");
 
-const { champions } = require("../public/data/latest.json");
+const { champions, version } = require("../public/data/latest.json");
 
-function logProcess(child) {
-  child.stdout.on("data", (data) => {
-    console.log(data.toString());
-  });
-
-  child.stderr.on("data", (data) => {
-    console.error(data.toString());
-  });
+/**
+ *
+ * @returns {string} Champion id
+ */
+function getRandomChampion() {
+  const index = Math.floor(Math.random() * champions.length);
+  return champions[index].id;
 }
 
-async function run() {
-  await new Promise((resolve, reject) => {
-    const build = spawn("npm.cmd", ["run", "build"]);
-
-    build.on("close", (code) => {
-      console.log(`Build process close all stdio with code ${code}`);
-      resolve(code);
-    });
-
-    build.on("error", (err) => {
-      reject(err);
-    });
-
-    logProcess(build);
-  });
-
-  const server = spawn("npm.cmd", ["run", "start"]);
-
-  server.on("close", (code) => {
-    console.log(`Build process close all stdio with code ${code}`);
-  });
-
-  server.on("error", (err) => {
-    console.error(err);
-  });
-
-  logProcess(server);
-
-  await takeScreenshots();
-  server.kill();
-  process.exit(0);
-}
-
-async function takeScreenshots() {
+(async () => {
   try {
-    const champion = getRandomChampion();
-
     const browser = await puppeteer.launch({
       defaultViewport: {
         width: 375,
@@ -59,33 +25,30 @@ async function takeScreenshots() {
     });
 
     const page = await browser.newPage();
+    const PAGE_URL = "https://league-of-react.vercel.app";
 
     console.log(chalk.cyan("Taking screenshot on /"));
-    await page.goto("http://localhost:3000", {
+    await page.goto(PAGE_URL, {
       waitUntil: "networkidle0",
       timeout: 0
     });
+
     await page.screenshot({ path: "docs/images/home.png" });
     console.log(chalk.green("Screenshot successfully"));
 
+    const champion = getRandomChampion();
     console.log(chalk.cyan(`Taking screenshot on /champions/${champion}`));
-    await page.goto(`http://localhost:3000/champions/${champion}`, {
+
+    await page.goto(`${PAGE_URL}/champions/${champion}`, {
       waitUntil: "networkidle0",
       timeout: 0
     });
 
     await page.screenshot({ path: "docs/images/champion.png" });
     console.log(chalk.green("Screenshot successfully"));
-
     await browser.close();
+    core.setOutput("latest-version", version);
   } catch (error) {
     console.error(error);
   }
-}
-
-function getRandomChampion() {
-  const index = Math.floor(Math.random() * champions.length);
-  return champions[index].id;
-}
-
-run();
+})();

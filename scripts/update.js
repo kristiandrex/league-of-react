@@ -1,3 +1,5 @@
+"use strict";
+
 const { promises: fs } = require("fs");
 const path = require("path");
 const fetch = require("node-fetch");
@@ -53,7 +55,6 @@ async function update(versions) {
   );
 
   core.setOutput("latest-version", latest);
-  core.setOutput("should-update", true);
   console.log(chalk.green(`Version ${latest} successfully downloaded.`));
 }
 

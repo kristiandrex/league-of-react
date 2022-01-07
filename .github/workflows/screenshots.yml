@@ -1,11 +1,11 @@
-name: Update to latest version from Data Dragon
+name: Take screenshots
 on:
   schedule:
-    - cron: 0 0 * * *
+    - cron: 5 0 * * *
   workflow_dispatch:
 
 jobs:
-  update:
+  screenshots:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,15 +15,15 @@ jobs:
           node-version: "14"
           cache: "npm"
       - run: npm install
-      - name: Download latest version
-        id: download
-        run: npm run update
-      - name: Commit latest version
+      - name: Take screenshots
+        id: screenshots
+        run: npm run screenshots
+      - name: Commit screenshots
         env:
-          LATEST_VERSION: ${{ steps.download.outputs.latest-version }}
+          LATEST_VERSION: ${{ steps.screenshots.outputs.latest-version }}
         run: |
           git config user.name kristiandrex
           git config user.email cristiandrestorres@gmail.com
           git add -A
-          git commit -m "Update to LoL version $LATEST_VERSION"
+          git commit -m "Take screenshots to LoL version $LATEST_VERSION"
           git push
