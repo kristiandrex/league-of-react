@@ -4,21 +4,19 @@ import { useRouter } from "next/router";
 
 import Champions from "@/components/Champions";
 import Search from "@/components/Search";
-import FilterChampions from "@/components/FilterChampions";
 import { useTheme } from "@/context/theme";
 
 export async function getStaticProps() {
-  const { version, champions } = require("@/public/data/latest.json");
+  const { champions } = require("@/public/data/latest.json");
 
   return {
     props: {
-      version,
       initialChampions: champions
     }
   };
 }
 
-function Home({ version, initialChampions }) {
+function Home({ initialChampions }) {
   const [champions, setChampions] = useState(initialChampions);
   const router = useRouter();
   const { setTheme } = useTheme();
@@ -55,12 +53,7 @@ function Home({ version, initialChampions }) {
       </Head>
       <main>
         <Search onChange={handleSearch} />
-        <span className="version">Versión: {version}</span>
-        {search ? (
-          <FilterChampions champions={champions} />
-        ) : (
-          <Champions champions={champions} />
-        )}
+        <Champions champions={champions} skip={Boolean(search)} />
       </main>
     </>
   );

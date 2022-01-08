@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import SearchIcon from "@/assets/search.svg";
+import styles from "@/styles/Search.module.css";
 
 function Search({ onChange }) {
   const inputRef = useRef();
@@ -11,7 +12,7 @@ function Search({ onChange }) {
   };
 
   return (
-    <form className="search" onSubmit={handleSubmit}>
+    <form className={styles.search} onSubmit={handleSubmit}>
       <input type="text" placeholder="Buscar..." ref={inputRef} />
       <button type="submit" aria-label="Buscar">
         <SearchIcon />

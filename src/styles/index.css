@@ -43,75 +43,11 @@ svg {
   transition: all 0.2s ease-out;
 }
 
-nav {
-  align-items: center;
-  background-color: var(--YELLOW);
-  display: flex;
-  height: 3.5rem;
-  justify-content: space-between;
-  padding: 1rem;
-  transition: all 0.2s ease-out;
-}
-
-nav a {
-  color: #fff;
-  vertical-align: middle;
-  font-weight: bold;
-}
-
-nav .home-link {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-nav .items {
-  display: flex;
-  gap: 2rem;
-}
-
 main {
   width: 90%;
   margin: 1rem auto;
   max-width: 1100px;
   text-align: center;
-}
-
-.search {
-  background-color: var(--LIGHT_GRAY);
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  display: flex;
-  gap: 0.5rem;
-  margin: 0 auto 1rem;
-  max-width: 300px;
-}
-
-.search input {
-  height: 100%;
-  width: 100%;
-  border-radius: 0.25rem;
-  border: none;
-  outline: none;
-  padding: 0.25rem;
-  font-size: 1rem;
-  font-family: "Roboto";
-}
-
-.search button {
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-}
-
-main .version {
-  background-color: var(--YELLOW);
-  display: inline-block;
-  padding: 0.5rem 0.75rem;
-  margin-bottom: 1rem;
-  border-radius: 50rem;
-  font-size: 0.75rem;
-  font-weight: bold;
 }
 
 main .grid {
@@ -124,82 +60,9 @@ main .grid {
   border-radius: 0.5rem;
 }
 
-.thumbnail {
-  cursor: pointer;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-}
-
-.thumbnail img {
-  border-radius: 0.5rem;
-}
-
-.thumbnail .name {
-  font-weight: bold;
-  display: block;
-}
-
-.champion {
-  background-color: var(--LIGHT_GRAY);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  gap: 1rem;
-}
-
-.champion .name {
-  margin: 0;
-}
-
-.champion .title {
-  font-weight: bold;
-  text-transform: uppercase;
-  display: block;
-  margin: 1rem 0;
-  font-size: 0.85rem;
-}
-
-.champion .images img {
-  border-radius: 0.5rem;
-}
-
-.champion .images .vertical {
-  width: 100%;
-}
-
-.champion .images .horizontal {
-  display: none;
-}
-
 @media screen and (min-width: 400px) {
   main .grid {
     grid-template-columns: repeat(auto-fill, 100px);
-  }
-}
-
-@media screen and (min-width: 475px) {
-  .champion {
-    display: grid;
-    grid-template-areas: "image details";
-    grid-auto-columns: 1fr auto;
-  }
-
-  .champion .details {
-    grid-area: details;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .champion .images .vertical {
-    display: none;
-  }
-
-  .champion .images .horizontal {
-    display: inline-block;
-    width: 100%;
   }
 }
 

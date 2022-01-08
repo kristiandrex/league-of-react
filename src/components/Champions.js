@@ -1,28 +1,49 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { chunckChampions } from "@/utils";
 import useObserver from "@/hooks/useObserver";
-import Thumbnail from "./Thumbnail";
+import useColumnCount from "@/hooks/useColumnCount";
 
-function Champions({ champions }) {
-  const [limit, setLimit] = useState(10);
-  const { ref, inView } = useObserver({ skip: limit >= champions.length });
+/**
+ *
+ * @param {{champions: IChampion[], skip?:boolean}} props
+ * @returns
+ */
+function Champions({ champions, skip }) {
+  const gridRef = useRef();
+  const columnCount = useColumnCount(gridRef);
+  const [chunkSize, setChunkSize] = useState(0);
+
+  skip = skip || chunkSize >= champions.length;
+
+  const { inView, ref: observerRef } = useObserver({
+    skip,
+    rootMargin: "150px"
+  });
+
+  useEffect(() => {
+    setChunkSize((chunk) => {
+      if (chunk === 0) {
+        return columnCount * 4;
+      }
+
+      return Math.ceil(chunk / columnCount) * columnCount;
+    });
+  }, [columnCount]);
 
   useEffect(() => {
     if (inView) {
-      setLimit((limit) => limit + 10);
+      setChunkSize((chunk) => chunk + columnCount);
     }
-  }, [inView]);
+  }, [inView, columnCount]);
 
-  const items = [];
-
-  for (let i = 0; i < limit && i < champions.length; i++) {
-    const champion = champions[i];
-    items.push(<Thumbnail key={champion.id} champion={champion} />);
-  }
+  const items = chunckChampions(champions, chunkSize);
 
   return (
     <section className="champions">
-      <div className="grid">{items}</div>
-      <div className="observer" ref={ref}></div>
+      <div className="grid" ref={gridRef}>
+        {items}
+      </div>
+      <div id="observer" ref={observerRef}></div>
     </section>
   );
 }

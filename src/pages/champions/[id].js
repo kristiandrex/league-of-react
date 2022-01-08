@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useEffect } from "react";
 import { useTheme } from "@/context/theme";
+import styles from "@/styles/Champion.module.css";
 
 export async function getStaticPaths() {
   const { champions } = require("@/public/data/latest.json");
@@ -36,7 +37,7 @@ export async function getStaticProps(context) {
  * @returns
  */
 function Champion({ champion }) {
-  const { theme, setTheme } = useTheme();
+  const { setTheme } = useTheme();
 
   useEffect(() => {
     setTheme(champion.color);
@@ -48,20 +49,17 @@ function Champion({ champion }) {
         <title>{champion.name} - League of React</title>
       </Head>
       <main>
-        <span className="version" style={{ backgroundColor: theme }}>
-          Versión: {champion.version}
-        </span>
-        <section className="champion">
-          <div className="details">
-            <h1 className="name">{champion.name}</h1>
-            <span className="title">{champion.title}</span>
+        <section className={styles.champion}>
+          <div className={styles.details}>
+            <h1 className={styles.name}>{champion.name}</h1>
+            <span className={styles.title}>{champion.title}</span>
           </div>
-          <div className="images">
+          <div className={styles.images}>
             {champion.new && <span className="badge">NUEVO</span>}
             <img
               src={champion.images.portrait}
               alt={champion.name}
-              className="vertical"
+              className={styles.vertical}
               loading="lazy"
               crossOrigin="anonymous"
             />
@@ -69,7 +67,7 @@ function Champion({ champion }) {
             <img
               src={champion.images.landscape}
               alt={champion.name}
-              className="horizontal"
+              className={styles.horizontal}
               loading="lazy"
               crossOrigin="anonymous"
             />

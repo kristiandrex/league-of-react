@@ -1,16 +1,22 @@
 import Link from "next/link";
 import GithubIcon from "@/assets/github.svg";
 import { useTheme } from "@/context/theme";
+import styles from "@/styles/Header.module.css";
 
-function Header() {
+/**
+ *
+ * @param {{version: string}} props
+ * @returns
+ */
+function Header({ version }) {
   const { theme } = useTheme();
 
   return (
-    <nav style={{ backgroundColor: theme }}>
-      <Link href="/">
-        <a className="home-link">League of React</a>
-      </Link>
-      <div className="items">
+    <header className={styles.header}>
+      <nav className={styles.nav} style={{ backgroundColor: theme }}>
+        <Link href="/">
+          <a className={styles.home_link}>League of React</a>
+        </Link>
         <Link href="https://github.com/kristiandrex/league-of-react">
           <a
             className="github-link"
@@ -21,8 +27,11 @@ function Header() {
             <GithubIcon />
           </a>
         </Link>
-      </div>
-    </nav>
+      </nav>
+      <span className={styles.version} style={{ backgroundColor: theme }}>
+        Versión: {version}
+      </span>
+    </header>
   );
 }
 
