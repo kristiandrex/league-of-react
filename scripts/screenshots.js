@@ -1,11 +1,11 @@
 "use strict";
 
-import fs from "fs";
-import puppeteer from "puppeteer";
-import chalk from "chalk";
-import core from "@actions/core";
+const fs = require("fs");
+const puppeteer = require("puppeteer");
+const chalk = require("chalk");
+const core = require("@actions/core");
 
-import { getVersions, fetchVersion } from "../utils/versions.js";
+const { getVersions, fetchVersion } = require("../utils/versions");
 
 const VERSION_FILE = "public/data/version.txt";
 

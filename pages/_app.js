@@ -1,7 +1,7 @@
 import App from "next/app";
 import Header from "@/components/Header";
 import { ThemeProvider } from "@/context/theme";
-import { getVersions } from "@/services/champions";
+import { getVersions } from "@/utils/versions";
 import "@/styles/index.css";
 
 function MyApp({ Component, pageProps, version }) {

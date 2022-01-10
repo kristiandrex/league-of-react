@@ -1,8 +1,7 @@
 {
   "name": "league-of-react",
-  "version": "3.4.0",
+  "version": "5.0.0-alpha",
   "private": true,
-  "type": "module",
   "dependencies": {
     "@actions/core": "^1.4.0",
     "@svgr/webpack": "^5.5.0",
