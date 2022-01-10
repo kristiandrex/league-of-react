@@ -5,16 +5,7 @@ import { useRouter } from "next/router";
 import Champions from "@/components/Champions";
 import Search from "@/components/Search";
 import { useTheme } from "@/context/theme";
-
-export async function getStaticProps() {
-  const { champions } = require("@/public/data/latest.json");
-
-  return {
-    props: {
-      initialChampions: champions
-    }
-  };
-}
+import { getAllChampions } from "@/services/champions";
 
 function Home({ initialChampions }) {
   const [champions, setChampions] = useState(initialChampions);
@@ -58,5 +49,13 @@ function Home({ initialChampions }) {
     </>
   );
 }
+
+Home.getInitialProps = async () => {
+  const champions = await getAllChampions();
+
+  return {
+    initialChampions: champions
+  };
+};
 
 export default Home;

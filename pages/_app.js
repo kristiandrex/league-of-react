@@ -1,6 +1,7 @@
 import App from "next/app";
-import { ThemeProvider } from "@/context/theme";
 import Header from "@/components/Header";
+import { ThemeProvider } from "@/context/theme";
+import { getVersions } from "@/services/champions";
 import "@/styles/index.css";
 
 function MyApp({ Component, pageProps, version }) {
@@ -16,8 +17,8 @@ function MyApp({ Component, pageProps, version }) {
 
 MyApp.getInitialProps = async (appContext) => {
   const appProps = await App.getInitialProps(appContext);
-  const { version } = require("@/public/data/latest.json");
-  return { version, ...appProps };
+  const { latest } = await getVersions();
+  return { version: latest, ...appProps };
 };
 
 export default MyApp;

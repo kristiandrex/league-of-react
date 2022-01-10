@@ -16,4 +16,9 @@ declare global {
       thumbnail: string;
     };
   }
+
+  type Versions = {
+    latest: string;
+    previous: string;
+  };
 }

@@ -39,12 +39,12 @@ function Champions({ champions, skip }) {
   const items = chunckChampions(champions, chunkSize);
 
   return (
-    <section className="champions">
+    <>
       <div className="grid" ref={gridRef}>
         {items}
       </div>
       <div id="observer" ref={observerRef}></div>
-    </section>
+    </>
   );
 }
 

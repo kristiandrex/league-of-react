@@ -10,6 +10,7 @@
   justify-content: space-between;
   padding: 1rem;
   transition: all 0.2s ease-out;
+  margin-bottom: 1rem;
 }
 
 .nav a {
@@ -27,7 +28,6 @@
   background-color: var(--YELLOW);
   display: inline-block;
   padding: 0.5rem 0.75rem;
-  margin: 1rem auto;
   border-radius: 50rem;
   font-size: 0.75rem;
   font-weight: bold;
