@@ -10,7 +10,7 @@ export async function getAllChampions() {
 
   const champions = latestChamps.map((champion) => {
     const { id, name } = champion;
-    const thumbnail = `http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${id}_0.jpg`;
+    const thumbnail = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${id}_0.jpg`;
     const isNew = newChampions.some((iterator) => iterator.id === id);
 
     return {
@@ -28,7 +28,7 @@ export async function getChampion(id) {
   const { latest } = await getVersions();
 
   const response = await fetch(
-    `http://ddragon.leagueoflegends.com/cdn/${latest}/data/es_MX/champion/${id}.json`
+    `https://ddragon.leagueoflegends.com/cdn/${latest}/data/es_MX/champion/${id}.json`
   );
   const json = await response.json();
   const champion = json.data[id];
@@ -48,6 +48,6 @@ function getSplashArts(champion) {
 
   return champion.skins.map(
     (skin) =>
-      `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_${skin.num}.jpg`
+      `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_${skin.num}.jpg`
   );
 }

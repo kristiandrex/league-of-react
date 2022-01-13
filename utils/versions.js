@@ -7,7 +7,7 @@ const fetch = require("node-fetch");
  */
 async function fetchVersion(version) {
   const response = await fetch(
-    `http://ddragon.leagueoflegends.com/cdn/${version}/data/es_MX/champion.json`
+    `https://ddragon.leagueoflegends.com/cdn/${version}/data/es_MX/champion.json`
   );
   const json = await response.json();
   return Object.values(json.data);
