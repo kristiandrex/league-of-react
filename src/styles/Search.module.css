@@ -1,0 +1,31 @@
+.search {
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 0.55rem;
+  border-radius: 5px;
+  display: flex;
+  gap: 0.4rem;
+  margin: 0 auto 1rem;
+  max-width: 300px;
+}
+
+.search input {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  padding: 0.55rem 0.65rem;
+  font-size: 1rem;
+  font-family: "Roboto";
+}
+
+.search button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search button svg {
+  width: 20px;
+}

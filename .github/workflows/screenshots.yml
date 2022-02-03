@@ -1,7 +1,7 @@
 name: Take screenshots
 on:
   schedule:
-    - cron: 0 0 * * *
+    - cron: 0 5 * * *
   workflow_dispatch:
 
 jobs:
@@ -20,10 +20,10 @@ jobs:
       - name: Commit screenshots
         if: ${{ steps.screenshots.outputs.should-commit == 'true' }}
         env:
-          LATEST_VERSION: ${{ steps.screenshots.outputs.latest-version }}
+          PATCH: ${{ steps.screenshots.outputs.patch }}
         run: |
           git config user.name kristiandrex
           git config user.email cristiandrestorres@gmail.com
           git add -A
-          git commit -m "Take screenshots to LoL version $LATEST_VERSION"
+          git commit -m "Take screenshots of patch $PATCH"
           git push

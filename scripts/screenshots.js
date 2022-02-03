@@ -4,19 +4,18 @@ const fs = require("fs");
 const puppeteer = require("puppeteer");
 const chalk = require("chalk");
 const core = require("@actions/core");
+const { getVersions } = require("./util");
 
-const { getVersions, fetchVersion } = require("../utils/versions");
-
-const VERSION_FILE = "public/data/version.txt";
+const SCREENSHOTS_FILE = "public/data/screenshots.txt";
 
 /**
- *
- * @returns {Promise<string>} Champion id
+ * choose random champion
+ * @returns {string} Champion ID
  */
-async function getRandomChampion(version) {
-  const champions = await fetchVersion(version);
-  const index = Math.floor(Math.random() * champions.length);
-  return champions[index].id;
+function getRandomChampion() {
+  const { champions } = require("public/data/patch.json");
+  const randomIndex = Math.floor(Math.random() * champions.length);
+  return champions[randomIndex].id;
 }
 
 async function takeScreenshots(version) {
@@ -30,54 +29,51 @@ async function takeScreenshots(version) {
   });
 
   const page = await browser.newPage();
+  await takeSingleScreenshot(page, PAGE_URL, "docs/images/home.png");
 
-  console.log(chalk.cyan(`Taking screenshot on ${PAGE_URL}/`));
-  await page.goto(PAGE_URL, {
-    waitUntil: "networkidle0",
-    timeout: 0
-  });
-
-  await page.screenshot({ path: "docs/images/home.png" });
-  console.log(chalk.green("Screenshot successfully"));
-
-  const champion = await getRandomChampion(version);
-  console.log(
-    chalk.cyan(`Taking screenshot on ${PAGE_URL}/champions/${champion}`)
+  const champion = getRandomChampion();
+  await takeSingleScreenshot(
+    page,
+    `${PAGE_URL}/champions/${champion}`,
+    "docs/images/champion.png"
   );
 
-  await page.goto(`${PAGE_URL}/champions/${champion}`, {
+  await browser.close();
+  await fs.promises.writeFile(SCREENSHOTS_FILE, version);
+  core.setOutput("patch", version);
+  core.setOutput("should-commit", true);
+}
+
+async function takeSingleScreenshot(page, url, path) {
+  console.log(chalk.cyan(`Taking screenshot on ${url}`));
+  await page.goto(url, {
     waitUntil: "networkidle0",
     timeout: 0
   });
 
-  await page.screenshot({ path: "docs/images/champion.png" });
-  await browser.close();
+  await page.screenshot({ path });
   console.log(chalk.green("Screenshot successfully"));
-
-  await fs.promises.writeFile(VERSION_FILE, version);
-  core.setOutput("latest-version", version);
-  core.setOutput("should-commit", true);
 }
 
 (async () => {
   try {
-    const { latest } = await getVersions();
     const force = process.argv[2] === "--force";
+    const { latest: latestVersion } = await getVersions();
 
-    if (!fs.existsSync(VERSION_FILE) || force) {
-      return await takeScreenshots(latest);
+    if (!fs.existsSync(SCREENSHOTS_FILE) || force) {
+      return await takeScreenshots(latestVersion);
     }
 
-    const currentVersion = fs.readFileSync(VERSION_FILE).toString();
+    const latestScreenshot = fs.readFileSync(SCREENSHOTS_FILE).toString();
 
-    if (currentVersion !== latest) {
-      return await takeScreenshots(latest);
+    if (latestScreenshot !== latestVersion) {
+      return await takeScreenshots(latestVersion);
     }
 
     core.setOutput("should-commit", false);
     console.log(
       chalk.yellow(
-        `The latest version ${currentVersion} hasn't changed. You can use --force flag for take the screenshots anyway`
+        `The latest version ${latestScreenshot} hasn't changed. You can use --force flag for take the screenshots anyway`
       )
     );
   } catch (error) {

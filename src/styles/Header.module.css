@@ -1,0 +1,35 @@
+.header {
+  text-align: center;
+}
+
+.nav {
+  align-items: center;
+  background-color: var(--YELLOW);
+  display: flex;
+  height: 3.5rem;
+  justify-content: space-between;
+  padding: 1rem;
+  transition: all 0.2s ease-out;
+  margin-bottom: 1rem;
+}
+
+.nav a {
+  color: #fff;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.nav .home_link {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.version {
+  background-color: var(--YELLOW);
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 50rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+}
