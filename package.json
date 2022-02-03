@@ -23,6 +23,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "update": "node scripts/update.js",
     "screenshots": "node scripts/screenshots.js"
   },
   "browserslist": {
