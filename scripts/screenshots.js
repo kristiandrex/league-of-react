@@ -13,7 +13,7 @@ const SCREENSHOTS_FILE = "public/data/screenshots.txt";
  * @returns {string} Champion ID
  */
 function getRandomChampion() {
-  const { champions } = require("public/data/patch.json");
+  const { champions } = require("../public/data/patch.json");
   const randomIndex = Math.floor(Math.random() * champions.length);
   return champions[randomIndex].id;
 }
