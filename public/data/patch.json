@@ -1,5 +1,5 @@
 {
- "version": "12.3.1",
+ "version": "12.4.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -1297,6 +1297,10 @@
     {
      "name": "Pulsefire Ekko",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_28.jpg"
+    },
+    {
+     "name": "Firelight Ekko",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_36.jpg"
     }
    ],
    "new": false
@@ -2739,6 +2743,10 @@
     {
      "name": "Hextech Kassadin",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kassadin_14.jpg"
+    },
+    {
+     "name": "Shockblade Kassadin",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kassadin_15.jpg"
     }
    ],
    "new": false
@@ -4631,6 +4639,10 @@
     {
      "name": "Battle Queen Qiyana",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_11.jpg"
+    },
+    {
+     "name": "Shockblade Qiyana",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_20.jpg"
     }
    ],
    "new": false
@@ -4808,6 +4820,24 @@
     }
    ],
    "new": false
+  },
+  {
+   "id": "Renata",
+   "name": "Renata Glasc",
+   "title": "the Chem-Baroness",
+   "lore": "Renata Glasc rose from the ashes of her childhood home with nothing but her name and her parents' alchemical research. In the decades since, she has become Zaun's wealthiest chem-baron, a business magnate who built her power by tying everyone's interests to her own. Work with her, and be rewarded beyond measure. Work against her, and live to regret it. But everyone comes to her side, eventually.",
+   "thumbnail": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Renata_0.jpg",
+   "skins": [
+    {
+     "name": "default",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_0.jpg"
+    },
+    {
+     "name": "Admiral Glasc",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_1.jpg"
+    }
+   ],
+   "new": true
   },
   {
    "id": "Renekton",
@@ -5345,6 +5375,10 @@
     {
      "name": "PsyOps Shen",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shen_22.jpg"
+    },
+    {
+     "name": "Shockblade Shen",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shen_40.jpg"
     }
    ],
    "new": false
