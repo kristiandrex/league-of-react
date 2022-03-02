@@ -1,5 +1,5 @@
 {
- "version": "12.4.1",
+ "version": "12.5.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -2083,6 +2083,10 @@
     {
      "name": "Pool Party Heimerdinger",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_15.jpg"
+    },
+    {
+     "name": "Heimerstinger",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_24.jpg"
     }
    ],
    "new": false
@@ -4333,6 +4337,10 @@
     {
      "name": "Space Groove Nunu \u0026 Willump",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_16.jpg"
+    },
+    {
+     "name": "Nunu \u0026 Beelump",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_26.jpg"
     }
    ],
    "new": false
@@ -4437,6 +4445,10 @@
     {
      "name": "Pool Party Orianna",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_11.jpg"
+    },
+    {
+     "name": "Orbeeanna",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_20.jpg"
     }
    ],
    "new": false
@@ -4837,7 +4849,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_1.jpg"
     }
    ],
-   "new": true
+   "new": false
   },
   {
    "id": "Renekton",
@@ -7417,6 +7429,10 @@
     {
      "name": "Hextech Ziggs",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_23.jpg"
+    },
+    {
+     "name": "BZZZiggs",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_24.jpg"
     }
    ],
    "new": false
