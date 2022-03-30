@@ -1,5 +1,5 @@
 {
- "version": "12.5.1",
+ "version": "12.6.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -29,7 +29,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_7.jpg"
     },
     {
-     "name": "Blood Moon Aatrox Prestige Edition",
+     "name": "Prestige Blood Moon Aatrox",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_8.jpg"
     },
     {
@@ -39,6 +39,10 @@
     {
      "name": "Odyssey Aatrox",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_11.jpg"
+    },
+    {
+     "name": "Prestige Blood Moon Aatrox (2022)",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_20.jpg"
     }
    ],
    "new": false
@@ -91,7 +95,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_15.jpg"
     },
     {
-     "name": "K/DA Ahri Prestige Edition",
+     "name": "Prestige K/DA Ahri",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_16.jpg"
     },
     {
@@ -109,6 +113,10 @@
     {
      "name": "Coven Ahri",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_42.jpg"
+    },
+    {
+     "name": "Prestige K/DA Ahri (2022)",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_65.jpg"
     }
    ],
    "new": false
@@ -161,7 +169,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_9.jpg"
     },
     {
-     "name": "K/DA Akali Prestige Edition",
+     "name": "Prestige K/DA Akali",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_13.jpg"
     },
     {
@@ -179,6 +187,10 @@
     {
      "name": "Crime City Nightmare Akali",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_50.jpg"
+    },
+    {
+     "name": "Prestige K/DA Akali (2022)",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_60.jpg"
     }
    ],
    "new": false
@@ -757,7 +769,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Brand_21.jpg"
     },
     {
-     "name": "Debonair Brand Prestige Edition",
+     "name": "Prestige Debonair Brand",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Brand_22.jpg"
     }
    ],
@@ -857,7 +869,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_19.jpg"
     },
     {
-     "name": "Arcade Caitlyn Prestige Edition",
+     "name": "Prestige Arcade Caitlyn",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_20.jpg"
     },
     {
@@ -867,6 +879,10 @@
     {
      "name": "Arcane Caitlyn",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_28.jpg"
+    },
+    {
+     "name": "Prestige Arcade Caitlyn (2022)",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_29.jpg"
     }
    ],
    "new": false
@@ -1137,7 +1153,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Diana_25.jpg"
     },
     {
-     "name": "Battle Queen Diana Prestige Edition",
+     "name": "Prestige Battle Queen Diana",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Diana_26.jpg"
     },
     {
@@ -1383,7 +1399,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_6.jpg"
     },
     {
-     "name": "K/DA Evelynn Prestige Edition",
+     "name": "Prestige K/DA Evelynn",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_7.jpg"
     },
     {
@@ -1397,6 +1413,10 @@
     {
      "name": "Coven Evelynn",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_24.jpg"
+    },
+    {
+     "name": "Prestige K/DA Evelynn (2022)",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_31.jpg"
     }
    ],
    "new": false
@@ -1469,7 +1489,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_22.jpg"
     },
     {
-     "name": "PsyOps Ezreal Prestige Edition",
+     "name": "Prestige PsyOps Ezreal",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_23.jpg"
     },
     {
@@ -1581,7 +1601,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiora_50.jpg"
     },
     {
-     "name": "Lunar Beast Fiora Prestige Edition",
+     "name": "Prestige Lunar Beast Fiora",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiora_51.jpg"
     },
     {
@@ -1635,12 +1655,16 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_14.jpg"
     },
     {
-     "name": "Fuzz Fizz Prestige Edition",
+     "name": "Prestige Fuzz Fizz",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_15.jpg"
     },
     {
      "name": "Little Devil Fizz",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_16.jpg"
+    },
+    {
+     "name": "Prestige Fuzz Fizz (2022)",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_25.jpg"
     }
    ],
    "new": false
@@ -1801,7 +1825,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_22.jpg"
     },
     {
-     "name": "Mecha Kingdoms Garen Prestige Edition",
+     "name": "Prestige Mecha Kingdoms Garen",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_23.jpg"
     },
     {
@@ -2161,7 +2185,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_16.jpg"
     },
     {
-     "name": "PROJECT: Irelia Prestige Edition",
+     "name": "Prestige PROJECT: Irelia",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_17.jpg"
     },
     {
@@ -2171,6 +2195,10 @@
     {
      "name": "Sentinel Irelia",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_26.jpg"
+    },
+    {
+     "name": "Prestige PROJECT: Irelia (2022)",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_36.jpg"
     }
    ],
    "new": false
@@ -2385,7 +2413,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_20.jpg"
     },
     {
-     "name": "Conqueror Jax Prestige Edition",
+     "name": "Prestige Conqueror Jax",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_21.jpg"
     }
    ],
@@ -2521,6 +2549,14 @@
     {
      "name": "Arcane Jinx",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_37.jpg"
+    },
+    {
+     "name": "Battle Cat Jinx",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_38.jpg"
+    },
+    {
+     "name": "Prestige Battle Cat Jinx",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_40.jpg"
     }
    ],
    "new": false
@@ -2545,7 +2581,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_14.jpg"
     },
     {
-     "name": "K/DA Kai'Sa Prestige Edition",
+     "name": "Prestige K/DA Kai'Sa",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_15.jpg"
     },
     {
@@ -2561,12 +2597,16 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_26.jpg"
     },
     {
-     "name": "K/DA ALL OUT Kai'Sa Prestige Edition",
+     "name": "Prestige K/DA ALL OUT Kai'Sa",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_27.jpg"
     },
     {
      "name": "Lagoon Dragon Kai'Sa",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_29.jpg"
+    },
+    {
+     "name": "Prestige K/DA Kai'Sa (2022)",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_39.jpg"
     }
    ],
    "new": false
@@ -2907,7 +2947,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayn_8.jpg"
     },
     {
-     "name": "Nightbringer Kayn Prestige Edition",
+     "name": "Prestige Nightbringer Kayn",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayn_9.jpg"
     }
    ],
@@ -3167,7 +3207,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_29.jpg"
     },
     {
-     "name": "Coven LeBlanc Prestige Edition",
+     "name": "Prestige Coven LeBlanc",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_33.jpg"
     },
     {
@@ -3229,7 +3269,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_27.jpg"
     },
     {
-     "name": "Nightbringer Lee Sin Prestige Edition",
+     "name": "Prestige Nightbringer Lee Sin",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_28.jpg"
     },
     {
@@ -3239,6 +3279,10 @@
     {
      "name": "Storm Dragon Lee Sin",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_31.jpg"
+    },
+    {
+     "name": "Prestige Nightbringer Lee Sin (2022)",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_39.jpg"
     }
    ],
    "new": false
@@ -3299,7 +3343,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_22.jpg"
     },
     {
-     "name": "Battle Academia Leona Prestige Edition",
+     "name": "Prestige Battle Academia Leona",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_23.jpg"
     },
     {
@@ -3409,7 +3453,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_18.jpg"
     },
     {
-     "name": "Pulsefire Lucian Prestige Edition",
+     "name": "Prestige Pulsefire Lucian",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_19.jpg"
     },
     {
@@ -3471,7 +3515,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lulu_26.jpg"
     },
     {
-     "name": "Space Groove Lulu Prestige Edition",
+     "name": "Prestige Space Groove Lulu",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lulu_27.jpg"
     }
    ],
@@ -3529,7 +3573,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_15.jpg"
     },
     {
-     "name": "Battle Academia Lux Prestige Edition",
+     "name": "Prestige Battle Academia Lux",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_16.jpg"
     },
     {
@@ -3549,7 +3593,11 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_29.jpg"
     },
     {
-     "name": "Porcelain Lux Prestige Edition",
+     "name": "Prestige Battle Academia Lux (2022)",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_39.jpg"
+    },
+    {
+     "name": "Prestige Porcelain Lux",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_40.jpg"
     }
    ],
@@ -3603,7 +3651,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malphite_23.jpg"
     },
     {
-     "name": "Dark Star Malphite Prestige Edition",
+     "name": "Prestige Dark Star Malphite",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malphite_24.jpg"
     },
     {
@@ -3847,12 +3895,20 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_18.jpg"
     },
     {
-     "name": "Bewitching Miss Fortune Prestige Edition",
+     "name": "Prestige Bewitching Miss Fortune",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_20.jpg"
     },
     {
      "name": "Ruined Miss Fortune",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_21.jpg"
+    },
+    {
+     "name": "Battle Bunny Miss Fortune",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_31.jpg"
+    },
+    {
+     "name": "Prestige Bewitching Miss Fortune (2022)",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_33.jpg"
     }
    ],
    "new": false
@@ -4001,7 +4057,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Morgana_39.jpg"
     },
     {
-     "name": "Bewitching Morgana Prestige Edition",
+     "name": "Prestige Bewitching Morgana",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Morgana_41.jpg"
     }
    ],
@@ -4173,12 +4229,16 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_10.jpg"
     },
     {
-     "name": "Star Guardian Neeko Prestige Edition",
+     "name": "Prestige Star Guardian Neeko",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_11.jpg"
     },
     {
      "name": "Shan Hai Scrolls Neeko",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_12.jpg"
+    },
+    {
+     "name": "Prestige Star Guardian Neeko (2022)",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_21.jpg"
     }
    ],
    "new": false
@@ -4527,7 +4587,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_25.jpg"
     },
     {
-     "name": "Ascended Pantheon Prestige Edition",
+     "name": "Prestige Ascended Pantheon",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_26.jpg"
     }
    ],
@@ -4621,6 +4681,10 @@
     {
      "name": "Sentinel Pyke",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_34.jpg"
+    },
+    {
+     "name": "Ashen Knight Pyke",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_44.jpg"
     }
    ],
    "new": false
@@ -4645,7 +4709,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_2.jpg"
     },
     {
-     "name": "True Damage Qiyana Prestige Edition",
+     "name": "Prestige True Damage Qiyana",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_10.jpg"
     },
     {
@@ -4655,6 +4719,10 @@
     {
      "name": "Shockblade Qiyana",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_20.jpg"
+    },
+    {
+     "name": "Prestige True Damage Qiyana (2022)",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_21.jpg"
     }
    ],
    "new": false
@@ -5007,7 +5075,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_20.jpg"
     },
     {
-     "name": "Valiant Sword Riven Prestige Edition",
+     "name": "Prestige Valiant Sword Riven",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_22.jpg"
     },
     {
@@ -5017,6 +5085,14 @@
     {
      "name": "Sentinel Riven",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_34.jpg"
+    },
+    {
+     "name": "Battle Bunny Prime Riven",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_44.jpg"
+    },
+    {
+     "name": "Prestige Valiant Sword Riven (2022)",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_45.jpg"
     }
    ],
    "new": false
@@ -5209,7 +5285,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_1.jpg"
     },
     {
-     "name": "True Damage Senna Prestige Edition",
+     "name": "Prestige True Damage Senna",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_9.jpg"
     },
     {
@@ -5273,7 +5349,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_8.jpg"
     },
     {
-     "name": "Obsidian Dragon Sett Prestige Edition",
+     "name": "Prestige Obsidian Dragon Sett",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_9.jpg"
     },
     {
@@ -5743,7 +5819,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Soraka_16.jpg"
     },
     {
-     "name": "Star Guardian Soraka Prestige Edition",
+     "name": "Prestige Star Guardian Soraka",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Soraka_17.jpg"
     },
     {
@@ -5815,8 +5891,12 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_13.jpg"
     },
     {
-     "name": "PROJECT: Sylas Prestige Edition",
+     "name": "Prestige PROJECT: Sylas",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_14.jpg"
+    },
+    {
+     "name": "Battle Wolf Sylas",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_24.jpg"
     }
    ],
    "new": false
@@ -6063,7 +6143,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_25.jpg"
     },
     {
-     "name": "Spirit Blossom Teemo Prestige Edition",
+     "name": "Prestige Spirit Blossom Teemo",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_27.jpg"
     },
     {
@@ -6113,7 +6193,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_13.jpg"
     },
     {
-     "name": "Pulsefire Thresh Prestige Edition",
+     "name": "Prestige Pulsefire Thresh",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_14.jpg"
     },
     {
@@ -6131,6 +6211,10 @@
     {
      "name": "Steel Dragon Thresh",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_28.jpg"
+    },
+    {
+     "name": "Prestige Pulsefire Thresh (2022)",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_38.jpg"
     }
    ],
    "new": false
@@ -6595,7 +6679,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vayne_12.jpg"
     },
     {
-     "name": "Firecracker Vayne Prestige Edition",
+     "name": "Prestige Firecracker Vayne",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vayne_13.jpg"
     },
     {
@@ -6609,6 +6693,14 @@
     {
      "name": "Sentinel Vayne",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vayne_25.jpg"
+    },
+    {
+     "name": "Battle Bat Vayne",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vayne_32.jpg"
+    },
+    {
+     "name": "Prestige Firecracker Vayne (2022)",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vayne_33.jpg"
     }
    ],
    "new": false
@@ -6931,7 +7023,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_7.jpg"
     },
     {
-     "name": "Duality Dragon Volibear Prestige Edition",
+     "name": "Prestige Duality Dragon Volibear",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_9.jpg"
     }
    ],
@@ -7035,7 +7127,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_17.jpg"
     },
     {
-     "name": "Brave Phoenix Xayah Prestige Edition",
+     "name": "Prestige Brave Phoenix Xayah",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_26.jpg"
     }
    ],
@@ -7173,7 +7265,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_18.jpg"
     },
     {
-     "name": "True Damage Yasuo Prestige Edition",
+     "name": "Prestige True Damage Yasuo",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_35.jpg"
     },
     {
@@ -7355,7 +7447,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_15.jpg"
     },
     {
-     "name": "PROJECT: Zed Prestige Edition",
+     "name": "Prestige PROJECT: Zed",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_30.jpg"
     },
     {
@@ -7503,7 +7595,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_18.jpg"
     },
     {
-     "name": "Arcanist Zoe Prestige Edition",
+     "name": "Prestige Arcanist Zoe",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_19.jpg"
     }
    ],
@@ -7541,7 +7633,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_5.jpg"
     },
     {
-     "name": "Coven Zyra Prestige Edition",
+     "name": "Prestige Coven Zyra",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_6.jpg"
     },
     {
