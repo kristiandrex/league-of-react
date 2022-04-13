@@ -1,5 +1,5 @@
 {
- "version": "12.6.1",
+ "version": "12.7.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -117,6 +117,10 @@
     {
      "name": "Prestige K/DA Ahri (2022)",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_65.jpg"
+    },
+    {
+     "name": "Arcana Ahri",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_66.jpg"
     }
    ],
    "new": false
@@ -2065,6 +2069,10 @@
     {
      "name": "Cosmic Charger Hecarim",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hecarim_14.jpg"
+    },
+    {
+     "name": "Arcana Hecarim",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hecarim_22.jpg"
     }
    ],
    "new": false
@@ -4795,6 +4803,10 @@
     {
      "name": "Elderwood Rakan",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rakan_9.jpg"
+    },
+    {
+     "name": "Arcana Rakan",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rakan_18.jpg"
     }
    ],
    "new": false
@@ -5189,6 +5201,10 @@
     {
      "name": "Guardian of the Sands Ryze",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_13.jpg"
+    },
+    {
+     "name": "Arcana Ryze",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_20.jpg"
     }
    ],
    "new": false
@@ -7129,6 +7145,10 @@
     {
      "name": "Prestige Brave Phoenix Xayah",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_26.jpg"
+    },
+    {
+     "name": "Arcana Xayah",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_28.jpg"
     }
    ],
    "new": false
