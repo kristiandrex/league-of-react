@@ -1,5 +1,5 @@
 {
- "version": "12.7.1",
+ "version": "12.8.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -43,6 +43,10 @@
     {
      "name": "Prestige Blood Moon Aatrox (2022)",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_20.jpg"
+    },
+    {
+     "name": "Lunar Eclipse Aatrox",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_21.jpg"
     }
    ],
    "new": false
@@ -1769,6 +1773,10 @@
     {
      "name": "FPX Gangplank",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gangplank_21.jpg"
+    },
+    {
+     "name": "Gangplank the Betrayer",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gangplank_23.jpg"
     }
    ],
    "new": false
@@ -2927,6 +2935,10 @@
     {
      "name": "Pentakill III: Lost Chapter Kayle",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayle_33.jpg"
+    },
+    {
+     "name": "Sun-Eater Kayle",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayle_42.jpg"
     }
    ],
    "new": false
@@ -5281,6 +5293,10 @@
     {
      "name": "PROJECT: Sejuani",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_16.jpg"
+    },
+    {
+     "name": "Solar Eclipse Sejuani",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_26.jpg"
     }
    ],
    "new": false
@@ -5311,6 +5327,14 @@
     {
      "name": "PROJECT: Senna",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_16.jpg"
+    },
+    {
+     "name": "Lunar Eclipse Senna",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_26.jpg"
+    },
+    {
+     "name": "Prestige Lunar Eclipse Senna",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_27.jpg"
     }
    ],
    "new": false
@@ -5687,6 +5711,10 @@
     {
      "name": "Cafe Cuties Sivir",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_34.jpg"
+    },
+    {
+     "name": "Solar Eclipse Sivir",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_43.jpg"
     }
    ],
    "new": false
@@ -7291,6 +7319,10 @@
     {
      "name": "Spirit Blossom Yasuo",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_36.jpg"
+    },
+    {
+     "name": "Sea Dog Yasuo",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_45.jpg"
     },
     {
      "name": "Truth Dragon Yasuo",
