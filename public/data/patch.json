@@ -1,5 +1,5 @@
 {
- "version": "12.8.1",
+ "version": "12.9.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -499,6 +499,10 @@
     {
      "name": "Lunar Beast Aphelios",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_9.jpg"
+    },
+    {
+     "name": "EDG Aphelios",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_18.jpg"
     }
    ],
    "new": false
@@ -2005,6 +2009,10 @@
     {
      "name": "Sentinel Graves",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Graves_35.jpg"
+    },
+    {
+     "name": "EDG Graves",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Graves_42.jpg"
     }
    ],
    "new": false
@@ -2873,6 +2881,10 @@
     {
      "name": "Battle Queen Katarina",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_29.jpg"
+    },
+    {
+     "name": "High Noon Katarina",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_37.jpg"
     }
    ],
    "new": false
@@ -3369,6 +3381,10 @@
     {
      "name": "Debonair Leona",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_33.jpg"
+    },
+    {
+     "name": "High Noon Leona",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_34.jpg"
     }
    ],
    "new": false
@@ -4017,6 +4033,10 @@
     {
      "name": "Pentakill III: Lost Chapter Mordekaiser",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_23.jpg"
+    },
+    {
+     "name": "High Noon Mordekaiser",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_32.jpg"
     }
    ],
    "new": false
@@ -6093,6 +6113,14 @@
     {
      "name": "Withered Rose Talon",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Talon_29.jpg"
+    },
+    {
+     "name": "High Noon Talon",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Talon_38.jpg"
+    },
+    {
+     "name": "Prestige High Noon Talon",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Talon_39.jpg"
     }
    ],
    "new": false
@@ -6671,6 +6699,10 @@
     {
      "name": "Cosmic Hunter Varus",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Varus_17.jpg"
+    },
+    {
+     "name": "High Noon Varus",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Varus_34.jpg"
     }
    ],
    "new": false
@@ -6931,6 +6963,10 @@
     {
      "name": "Dissonance of Pentakill Viego",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viego_10.jpg"
+    },
+    {
+     "name": "EDG Viego",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viego_19.jpg"
     }
    ],
    "new": false
@@ -7425,6 +7461,10 @@
     {
      "name": "Bewitching Yuumi",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yuumi_28.jpg"
+    },
+    {
+     "name": "EDG Yuumi",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yuumi_37.jpg"
     }
    ],
    "new": false
@@ -7649,6 +7689,10 @@
     {
      "name": "Prestige Arcanist Zoe",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_19.jpg"
+    },
+    {
+     "name": "EDG Zoe",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_20.jpg"
     }
    ],
    "new": false
