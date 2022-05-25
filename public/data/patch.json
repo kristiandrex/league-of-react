@@ -1,5 +1,5 @@
 {
- "version": "12.9.1",
+ "version": "12.10.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -5259,6 +5259,10 @@
     {
      "name": "Space Groove Samira",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Samira_10.jpg"
+    },
+    {
+     "name": "High Noon Samira",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Samira_20.jpg"
     }
    ],
    "new": false
@@ -5665,6 +5669,10 @@
     {
      "name": "Blackfrost Sion",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sion_22.jpg"
+    },
+    {
+     "name": "High Noon Sion",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sion_30.jpg"
     }
    ],
    "new": false
@@ -6041,6 +6049,10 @@
     {
      "name": "Arcana Tahm Kench",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_11.jpg"
+    },
+    {
+     "name": "High Noon Tahm Kench",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_20.jpg"
     }
    ],
    "new": false
@@ -6577,6 +6589,10 @@
     {
      "name": "Dragonslayer Twitch",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Twitch_36.jpg"
+    },
+    {
+     "name": "High Noon Twitch",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Twitch_45.jpg"
     }
    ],
    "new": false
@@ -7001,6 +7017,10 @@
     {
      "name": "PsyOps Viktor",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viktor_5.jpg"
+    },
+    {
+     "name": "High Noon Viktor",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viktor_14.jpg"
     }
    ],
    "new": false
