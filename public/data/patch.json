@@ -1,5 +1,5 @@
 {
- "version": "12.10.1",
+ "version": "12.11.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -569,6 +569,10 @@
     {
      "name": "Coven Ashe",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_32.jpg"
+    },
+    {
+     "name": "Ocean Song Ashe",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_43.jpg"
     }
    ],
    "new": false
@@ -666,6 +670,24 @@
     }
    ],
    "new": false
+  },
+  {
+   "id": "Belveth",
+   "name": "Bel'Veth",
+   "title": "the Empress of the Void",
+   "lore": "A nightmarish empress created from the raw material of an entire devoured city, Bel'Veth is the end of Runeterra itself... and the beginning of a monstrous reality of her own design. Driven by epochs of repurposed history, knowledge, and memories from the world above, she voraciously feeds an ever-expanding need for new experiences and emotions, consuming all that crosses her path. Yet her wants could never be sated by only one world as she turns her hungry eyes toward the Void's old masters...",
+   "thumbnail": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Belveth_0.jpg",
+   "skins": [
+    {
+     "name": "default",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Belveth_0.jpg"
+    },
+    {
+     "name": "Battle Boss Bel'Veth",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Belveth_1.jpg"
+    }
+   ],
+   "new": true
   },
   {
    "id": "Blitzcrank",
@@ -4341,6 +4363,10 @@
     {
      "name": "DWG Nidalee",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_27.jpg"
+    },
+    {
+     "name": "Ocean Song Nidalee",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_29.jpg"
     }
    ],
    "new": false
@@ -5389,6 +5415,14 @@
     {
      "name": "Graceful Phoenix Seraphine",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Seraphine_4.jpg"
+    },
+    {
+     "name": "Ocean Song Seraphine",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Seraphine_14.jpg"
+    },
+    {
+     "name": "Prestige Ocean Song Seraphine",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Seraphine_15.jpg"
     }
    ],
    "new": false
@@ -7413,6 +7447,10 @@
     {
      "name": "Dawnbringer Yone",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yone_19.jpg"
+    },
+    {
+     "name": "Ocean Song Yone",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yone_26.jpg"
     }
    ],
    "new": false
@@ -7583,6 +7621,10 @@
     {
      "name": "Withered Rose Zeri",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zeri_1.jpg"
+    },
+    {
+     "name": "Ocean Song Zeri",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zeri_10.jpg"
     }
    ],
    "new": false
