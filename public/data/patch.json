@@ -1,5 +1,5 @@
 {
- "version": "12.11.1",
+ "version": "12.12.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -687,7 +687,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Belveth_1.jpg"
     }
    ],
-   "new": true
+   "new": false
   },
   {
    "id": "Blitzcrank",
@@ -917,6 +917,10 @@
     {
      "name": "Prestige Arcade Caitlyn (2022)",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_29.jpg"
+    },
+    {
+     "name": "Snow Moon Caitlyn",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_30.jpg"
     }
    ],
    "new": false
@@ -2183,6 +2187,10 @@
     {
      "name": "Cosmic Invoker Illaoi",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Illaoi_10.jpg"
+    },
+    {
+     "name": "Snow Moon Illaoi",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Illaoi_18.jpg"
     }
    ],
    "new": false
@@ -3003,6 +3011,10 @@
     {
      "name": "Prestige Nightbringer Kayn",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayn_9.jpg"
+    },
+    {
+     "name": "Snow Moon Kayn",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayn_15.jpg"
     }
    ],
    "new": false
@@ -4655,6 +4667,10 @@
     {
      "name": "Prestige Ascended Pantheon",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_26.jpg"
+    },
+    {
+     "name": "Ashen Knight Pantheon",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_36.jpg"
     }
    ],
    "new": false
