@@ -1,5 +1,5 @@
 {
- "version": "12.12.1",
+ "version": "12.13.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -1355,6 +1355,14 @@
     {
      "name": "Firelight Ekko",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_36.jpg"
+    },
+    {
+     "name": "Star Guardian Ekko",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_45.jpg"
+    },
+    {
+     "name": "Prestige Star Guardian Ekko",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_46.jpg"
     }
    ],
    "new": false
@@ -1583,6 +1591,10 @@
     {
      "name": "Praetorian Fiddlesticks",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiddlesticks_9.jpg"
+    },
+    {
+     "name": "Star Nemesis Fiddlesticks",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiddlesticks_27.jpg"
     }
    ],
    "new": false
@@ -2661,6 +2673,10 @@
     {
      "name": "Prestige K/DA Kai'Sa (2022)",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_39.jpg"
+    },
+    {
+     "name": "Star Guardian Kai'Sa",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_40.jpg"
     }
    ],
    "new": false
@@ -4384,6 +4400,24 @@
    "new": false
   },
   {
+   "id": "Nilah",
+   "name": "Nilah",
+   "title": "the Joy Unbound",
+   "lore": "Nilah is an ascetic warrior from a distant land, seeking the world's deadliest, most titanic opponents so that she might challenge and destroy them. Having won her power through an encounter with the long-imprisoned demon of joy, she has no emotions other than unceasing jubilation—a small price to pay for the vast strength she now possesses. Channeling the demon's liquid form into a blade of unparalleled might, she stands defiant against ancient threats long forgotten.",
+   "thumbnail": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nilah_0.jpg",
+   "skins": [
+    {
+     "name": "default",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nilah_0.jpg"
+    },
+    {
+     "name": "Star Guardian Nilah",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nilah_1.jpg"
+    }
+   ],
+   "new": true
+  },
+  {
    "id": "Nocturne",
    "name": "Nocturne",
    "title": "the Eternal Nightmare",
@@ -5881,6 +5915,10 @@
     {
      "name": "Pentakill III: Lost Chapter Sona",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_26.jpg"
+    },
+    {
+     "name": "Star Guardian Sona",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_35.jpg"
     }
    ],
    "new": false
