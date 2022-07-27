@@ -1,5 +1,5 @@
 {
- "version": "12.13.1",
+ "version": "12.14.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -199,6 +199,10 @@
     {
      "name": "Prestige K/DA Akali (2022)",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_60.jpg"
+    },
+    {
+     "name": "Star Guardian Akali",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_61.jpg"
     }
    ],
    "new": false
@@ -4149,6 +4153,10 @@
     {
      "name": "Prestige Bewitching Morgana",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Morgana_41.jpg"
+    },
+    {
+     "name": "Star Nemesis Morgana",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Morgana_50.jpg"
     }
    ],
    "new": false
@@ -4415,7 +4423,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nilah_1.jpg"
     }
    ],
-   "new": true
+   "new": false
   },
   {
    "id": "Nocturne",
@@ -4873,6 +4881,10 @@
     {
      "name": "Warden Quinn",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Quinn_5.jpg"
+    },
+    {
+     "name": "Star Guardian Quinn",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Quinn_14.jpg"
     }
    ],
    "new": false
@@ -5017,6 +5029,10 @@
     {
      "name": "Battle Queen Rell",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rell_1.jpg"
+    },
+    {
+     "name": "Star Guardian Rell",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rell_10.jpg"
     }
    ],
    "new": false
@@ -6107,6 +6123,10 @@
     {
      "name": "Bewitching Syndra",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Syndra_25.jpg"
+    },
+    {
+     "name": "Prestige Star Guardian Syndra",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Syndra_34.jpg"
     }
    ],
    "new": false
@@ -6167,6 +6187,10 @@
     {
      "name": "Pool Party Taliyah",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taliyah_3.jpg"
+    },
+    {
+     "name": "Star Guardian Taliyah",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taliyah_11.jpg"
     }
    ],
    "new": false
