@@ -1,5 +1,5 @@
 {
- "version": "12.15.1",
+ "version": "12.16.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -955,6 +955,10 @@
     {
      "name": "Arcana Camille",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Camille_11.jpg"
+    },
+    {
+     "name": "Strike Commander Camille",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Camille_21.jpg"
     }
    ],
    "new": false
@@ -2357,6 +2361,14 @@
     {
      "name": "Crystal Rose Janna",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Janna_36.jpg"
+    },
+    {
+     "name": "Cyber Halo Janna",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Janna_45.jpg"
+    },
+    {
+     "name": "Prestige Cyber Halo Janna",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Janna_46.jpg"
     }
    ],
    "new": false
@@ -3557,6 +3569,10 @@
     {
      "name": "Arcana Lucian",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_31.jpg"
+    },
+    {
+     "name": "Strike Paladin Lucian",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_40.jpg"
     }
    ],
    "new": false
@@ -4269,6 +4285,10 @@
     {
      "name": "Space Groove Nasus",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_25.jpg"
+    },
+    {
+     "name": "Armored Titan Nasus",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_35.jpg"
     }
    ],
    "new": false
@@ -6721,7 +6741,7 @@
    "id": "Udyr",
    "name": "Udyr",
    "title": "the Spirit Walker",
-   "lore": "Udyr is more than a man; he is a vessel for the untamed power of four primal animal spirits. When tapping into the spirits' bestial natures, Udyr can harness their unique strengths: The tiger grants him speed and ferocity, the turtle resilience, the bear might, and the phoenix its eternal flame. With their combined power, Udyr can turn back all those who would attempt to harm the natural order.",
+   "lore": "The most powerful spirit walker alive, Udyr communes with all the spirits of the Freljord, whether by empathically understanding their needs, or by channeling and transforming their ethereal energy into his own primal fighting style. He seeks balance within, so that his mind does not get lost amidst others, but he also seeks balance without—for the Freljord's mystical landscape can only thrive with the growth that comes from conflict and struggle, and Udyr knows that sacrifices must be made to keep peaceful stagnance at bay.",
    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Udyr_0.jpg",
    "skins": [
     {
