@@ -1,5 +1,5 @@
 {
- "version": "12.16.1",
+ "version": "12.17.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -755,6 +755,10 @@
     {
      "name": "Victorious Blitzcrank",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_36.jpg"
+    },
+    {
+     "name": "Zenith Games Blitzcrank",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_47.jpg"
     }
    ],
    "new": false
@@ -2539,6 +2543,10 @@
     {
      "name": "Arcane Jayce",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jayce_24.jpg"
+    },
+    {
+     "name": "Zenith Games Jayce",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jayce_25.jpg"
     }
    ],
    "new": false
@@ -3385,6 +3393,10 @@
     {
      "name": "Prestige Nightbringer Lee Sin (2022)",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_39.jpg"
+    },
+    {
+     "name": "Zenith Games Lee Sin",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_41.jpg"
     }
    ],
    "new": false
@@ -7127,6 +7139,10 @@
     {
      "name": "EDG Viego",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viego_19.jpg"
+    },
+    {
+     "name": "King Viego",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viego_21.jpg"
     }
    ],
    "new": false
