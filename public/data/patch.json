@@ -1,5 +1,5 @@
 {
- "version": "12.17.1",
+ "version": "12.18.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -481,6 +481,10 @@
     {
      "name": "Cafe Cuties Annie",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_22.jpg"
+    },
+    {
+     "name": "Fright Night Annie",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_31.jpg"
     }
    ],
    "new": false
@@ -637,6 +641,10 @@
     {
      "name": "Elderwood Azir",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_5.jpg"
+    },
+    {
+     "name": "Worlds 2022 Azir",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_14.jpg"
     }
    ],
    "new": false
@@ -1321,6 +1329,10 @@
     {
      "name": "Debonair Draven",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_29.jpg"
+    },
+    {
+     "name": "Fright Night Draven",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_39.jpg"
     }
    ],
    "new": false
@@ -4343,6 +4355,10 @@
     {
      "name": "Shan Hai Scrolls Nautilus",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_9.jpg"
+    },
+    {
+     "name": "Fright Night Nautilus",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_18.jpg"
     }
    ],
    "new": false
@@ -4751,7 +4767,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_26.jpg"
     },
     {
-     "name": "Ashen Knight Pantheon",
+     "name": "Ashen Conqueror Pantheon",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_36.jpg"
     }
    ],
@@ -5091,6 +5107,10 @@
     {
      "name": "Admiral Glasc",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_1.jpg"
+    },
+    {
+     "name": "Fright Night Renata Glasc",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_10.jpg"
     }
    ],
    "new": false
@@ -6113,6 +6133,10 @@
     {
      "name": "Battle Wolf Sylas",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_24.jpg"
+    },
+    {
+     "name": "Ashen Slayer Sylas",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_34.jpg"
     }
    ],
    "new": false
@@ -6555,6 +6579,10 @@
     {
      "name": "Dragonslayer Trundle",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Trundle_6.jpg"
+    },
+    {
+     "name": "Fright Night Trundle",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Trundle_12.jpg"
     }
    ],
    "new": false
@@ -6813,6 +6841,10 @@
     {
      "name": "Pajama Guardian Cosplay Urgot",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Urgot_15.jpg"
+    },
+    {
+     "name": "Fright Night Urgot",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Urgot_23.jpg"
     }
    ],
    "new": false
