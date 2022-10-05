@@ -1,5 +1,5 @@
 {
- "version": "12.18.1",
+ "version": "12.19.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -511,6 +511,10 @@
     {
      "name": "EDG Aphelios",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_18.jpg"
+    },
+    {
+     "name": "Spirit Blossom Aphelios",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_20.jpg"
     }
    ],
    "new": false
@@ -1167,6 +1171,10 @@
     {
      "name": "Crime City Nightmare Darius",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_33.jpg"
+    },
+    {
+     "name": "Spirit Blossom Darius",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_43.jpg"
     }
    ],
    "new": false
@@ -1487,6 +1495,10 @@
     {
      "name": "Prestige K/DA Evelynn (2022)",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_31.jpg"
+    },
+    {
+     "name": "Spirit Blossom Evelynn",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_32.jpg"
     }
    ],
    "new": false
@@ -3965,6 +3977,14 @@
     {
      "name": "Debonair Master Yi",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_42.jpg"
+    },
+    {
+     "name": "Spirit Blossom Master Yi",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_52.jpg"
+    },
+    {
+     "name": "Prestige Spirit Blossom Master Yi",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_53.jpg"
     }
    ],
    "new": false
@@ -5583,6 +5603,10 @@
     {
      "name": "Firecracker Sett",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_19.jpg"
+    },
+    {
+     "name": "Spirit Blossom Sett",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_38.jpg"
     }
    ],
    "new": false
@@ -6061,6 +6085,10 @@
     {
      "name": "Cafe Cuties Soraka",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Soraka_18.jpg"
+    },
+    {
+     "name": "Spirit Blossom Soraka",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Soraka_27.jpg"
     }
    ],
    "new": false
@@ -6191,6 +6219,10 @@
     {
      "name": "Prestige Star Guardian Syndra",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Syndra_34.jpg"
+    },
+    {
+     "name": "Spirit Blossom Syndra",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Syndra_44.jpg"
     }
    ],
    "new": false
@@ -6541,6 +6573,10 @@
     {
      "name": "Firecracker Tristana",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tristana_41.jpg"
+    },
+    {
+     "name": "Spirit Blossom Tristana",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tristana_51.jpg"
     }
    ],
    "new": false
@@ -7647,6 +7683,10 @@
     {
      "name": "Pentakill III: Lost Chapter Yorick",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yorick_21.jpg"
+    },
+    {
+     "name": "Spirit Blossom Yorick",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yorick_30.jpg"
     }
    ],
    "new": false
