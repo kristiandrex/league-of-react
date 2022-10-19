@@ -1,5 +1,5 @@
 {
- "version": "12.19.1",
+ "version": "12.20.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -411,6 +411,10 @@
     {
      "name": "Divine Phoenix Anivia",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_27.jpg"
+    },
+    {
+     "name": "Bewitching Batnivia",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_37.jpg"
     }
    ],
    "new": false
@@ -1017,6 +1021,10 @@
     {
      "name": "Coven Cassiopeia",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_18.jpg"
+    },
+    {
+     "name": "Bewitching Cassiopeia",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_28.jpg"
     }
    ],
    "new": false
@@ -3347,6 +3355,10 @@
     {
      "name": "Debonair LeBlanc",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_35.jpg"
+    },
+    {
+     "name": "Bewitching LeBlanc",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_45.jpg"
     }
    ],
    "new": false
@@ -3865,6 +3877,10 @@
     {
      "name": "Debonair Malzahar",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malzahar_28.jpg"
+    },
+    {
+     "name": "Three Honors Malzahar",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malzahar_38.jpg"
     }
    ],
    "new": false
@@ -4413,6 +4429,10 @@
     {
      "name": "Prestige Star Guardian Neeko (2022)",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_21.jpg"
+    },
+    {
+     "name": "Bewitching Neeko",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_22.jpg"
     }
    ],
    "new": false
@@ -5531,6 +5551,10 @@
     {
      "name": "Prestige Lunar Eclipse Senna",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_27.jpg"
+    },
+    {
+     "name": "Bewitching Senna",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_36.jpg"
     }
    ],
    "new": false
