@@ -1,5 +1,5 @@
 {
- "version": "12.20.1",
+ "version": "12.21.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -2533,6 +2533,10 @@
     {
      "name": "Prestige Conqueror Jax",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_21.jpg"
+    },
+    {
+     "name": "Empyrean Jax",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_22.jpg"
     }
    ],
    "new": false
@@ -2621,6 +2625,10 @@
     {
      "name": "DWG Jhin",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_23.jpg"
+    },
+    {
+     "name": "Empyrean Jhin",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_25.jpg"
     }
    ],
    "new": false
@@ -2682,6 +2690,28 @@
     }
    ],
    "new": false
+  },
+  {
+   "id": "KSante",
+   "name": "K'Sante",
+   "title": "the Pride of Nazumah",
+   "lore": "Defiant and courageous, K'Sante battles colossal beasts and ruthless Ascended to protect his home of Nazumah, a coveted oasis amid the sands of Shurima. But after a falling-out with his former partner, K'Sante realizes that in order to become a warrior worthy of leading his city, he must temper his single-minded drive for success. Only then can he avoid falling prey to his own pride and find the wisdom he needs to defeat the vicious monsters threatening his people.",
+   "thumbnail": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/KSante_0.jpg",
+   "skins": [
+    {
+     "name": "default",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KSante_0.jpg"
+    },
+    {
+     "name": "Empyrean K'Sante",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KSante_1.jpg"
+    },
+    {
+     "name": "Prestige Empyrean K'Sante",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KSante_2.jpg"
+    }
+   ],
+   "new": true
   },
   {
    "id": "Kaisa",
@@ -3761,6 +3791,10 @@
     {
      "name": "Prestige Porcelain Lux",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_40.jpg"
+    },
+    {
+     "name": "Empyrean Lux",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_42.jpg"
     }
    ],
    "new": false
@@ -4905,6 +4939,10 @@
     {
      "name": "Ashen Knight Pyke",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_44.jpg"
+    },
+    {
+     "name": "Empyrean Pyke",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_45.jpg"
     }
    ],
    "new": false
@@ -7155,6 +7193,10 @@
     {
      "name": "Dawnbringer Vex",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vex_1.jpg"
+    },
+    {
+     "name": "Empyrean Vex",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vex_10.jpg"
     }
    ],
    "new": false
@@ -7775,6 +7817,10 @@
     {
      "name": "Battlecast Zac",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zac_7.jpg"
+    },
+    {
+     "name": "Empyrean Zac",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zac_14.jpg"
     }
    ],
    "new": false
@@ -7825,6 +7871,10 @@
     {
      "name": "Debonair Zed",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_31.jpg"
+    },
+    {
+     "name": "Empyrean Zed",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_38.jpg"
     }
    ],
    "new": false
