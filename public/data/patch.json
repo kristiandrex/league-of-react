@@ -1,5 +1,5 @@
 {
- "version": "12.21.1",
+ "version": "12.22.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -2033,6 +2033,10 @@
     {
      "name": "Warden Gragas",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_11.jpg"
+    },
+    {
+     "name": "Space Groove Gragas",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_20.jpg"
     }
    ],
    "new": false
@@ -2711,7 +2715,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KSante_2.jpg"
     }
    ],
-   "new": true
+   "new": false
   },
   {
    "id": "Kaisa",
@@ -3593,6 +3597,10 @@
     {
      "name": "Porcelain Lissandra",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lissandra_23.jpg"
+    },
+    {
+     "name": "Space Groove Lissandra",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lissandra_34.jpg"
     }
    ],
    "new": false
@@ -4325,6 +4333,14 @@
     {
      "name": "Bewitching Nami",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nami_32.jpg"
+    },
+    {
+     "name": "Space Groove Nami",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nami_41.jpg"
+    },
+    {
+     "name": "Prestige Space Groove Nami",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nami_42.jpg"
     }
    ],
    "new": false
@@ -4781,6 +4797,10 @@
     {
      "name": "Elderwood Ornn",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ornn_2.jpg"
+    },
+    {
+     "name": "Space Groove Ornn",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ornn_11.jpg"
     }
    ],
    "new": false
@@ -5551,6 +5571,10 @@
     {
      "name": "Solar Eclipse Sejuani",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_26.jpg"
+    },
+    {
+     "name": "Victorious Sejuani",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_36.jpg"
     }
    ],
    "new": false
@@ -6437,6 +6461,10 @@
     {
      "name": "Taric Luminshield",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_9.jpg"
+    },
+    {
+     "name": "Space Groove Taric",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_18.jpg"
     }
    ],
    "new": false
@@ -6503,6 +6531,10 @@
     {
      "name": "Firecracker Teemo",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_37.jpg"
+    },
+    {
+     "name": "Space Groove Teemo",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_47.jpg"
     }
    ],
    "new": false
@@ -6809,6 +6841,10 @@
     {
      "name": "Crime City Nightmare Twisted Fate",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TwistedFate_25.jpg"
+    },
+    {
+     "name": "Space Groove Twisted Fate",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TwistedFate_36.jpg"
     }
    ],
    "new": false
