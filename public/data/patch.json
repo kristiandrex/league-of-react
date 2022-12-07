@@ -1,5 +1,5 @@
 {
- "version": "12.22.1",
+ "version": "12.23.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -1237,6 +1237,10 @@
     {
      "name": "Firecracker Diana",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Diana_37.jpg"
+    },
+    {
+     "name": "Winterblessed Diana",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Diana_47.jpg"
     }
    ],
    "new": false
@@ -4217,6 +4221,10 @@
     {
      "name": "High Noon Mordekaiser",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_32.jpg"
+    },
+    {
+     "name": "Ashen Graveknight Mordekaiser",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_42.jpg"
     }
    ],
    "new": false
@@ -5747,6 +5755,10 @@
     {
      "name": "Crime City Nightmare Shaco",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_23.jpg"
+    },
+    {
+     "name": "Winterblessed Shaco",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_33.jpg"
     }
    ],
    "new": false
@@ -6213,6 +6225,10 @@
     {
      "name": "Crystal Rose Swain",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Swain_12.jpg"
+    },
+    {
+     "name": "Winterblessed Swain",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Swain_21.jpg"
     }
    ],
    "new": false
@@ -7517,6 +7533,14 @@
     {
      "name": "Old God Warwick",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_35.jpg"
+    },
+    {
+     "name": "Winterblessed Warwick",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_45.jpg"
+    },
+    {
+     "name": "Prestige Winterblessed Warwick",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_46.jpg"
     }
    ],
    "new": false
@@ -8025,6 +8049,10 @@
     {
      "name": "Sugar Rush Zilean",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zilean_6.jpg"
+    },
+    {
+     "name": "Winterblessed Zilean",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zilean_14.jpg"
     }
    ],
    "new": false
@@ -8063,6 +8091,10 @@
     {
      "name": "EDG Zoe",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_20.jpg"
+    },
+    {
+     "name": "Winterblessed Zoe",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_22.jpg"
     }
    ],
    "new": false
