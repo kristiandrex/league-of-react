@@ -1,5 +1,5 @@
 {
- "version": "12.23.1",
+ "version": "13.1.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -589,6 +589,10 @@
     {
      "name": "Ocean Song Ashe",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_43.jpg"
+    },
+    {
+     "name": "Lunar Empress Ashe",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_52.jpg"
     }
    ],
    "new": false
@@ -1809,6 +1813,10 @@
     {
      "name": "Dragon Guardian Galio",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Galio_19.jpg"
+    },
+    {
+     "name": "Mythmaker Galio",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Galio_28.jpg"
     }
    ],
    "new": false
@@ -1933,6 +1941,10 @@
     {
      "name": "Battle Academia Garen",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_24.jpg"
+    },
+    {
+     "name": "Mythmaker Garen",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_33.jpg"
     }
    ],
    "new": false
@@ -2317,6 +2329,10 @@
     {
      "name": "Prestige PROJECT: Irelia (2022)",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_36.jpg"
+    },
+    {
+     "name": "Mythmaker Irelia",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_37.jpg"
     }
    ],
    "new": false
@@ -3213,6 +3229,10 @@
     {
      "name": "Odyssey Kha'Zix",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Khazix_60.jpg"
+    },
+    {
+     "name": "Lunar Guardian Kha'Zix",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Khazix_69.jpg"
     }
    ],
    "new": false
@@ -3603,6 +3623,10 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lissandra_23.jpg"
     },
     {
+     "name": "Prestige Porcelain Lissandra",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lissandra_33.jpg"
+    },
+    {
      "name": "Space Groove Lissandra",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lissandra_34.jpg"
     }
@@ -3869,6 +3893,10 @@
     {
      "name": "Old God Malphite",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malphite_27.jpg"
+    },
+    {
+     "name": "Lunar Guardian Malphite",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malphite_37.jpg"
     }
    ],
    "new": false
@@ -5009,6 +5037,10 @@
     {
      "name": "Prestige True Damage Qiyana (2022)",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_21.jpg"
+    },
+    {
+     "name": "Lunar Empress Qiyana",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_30.jpg"
     }
    ],
    "new": false
@@ -6025,6 +6057,14 @@
     {
      "name": "Solar Eclipse Sivir",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_43.jpg"
+    },
+    {
+     "name": "Mythmaker Sivir",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_50.jpg"
+    },
+    {
+     "name": "Prestige Mythmaker Sivir",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_51.jpg"
     }
    ],
    "new": false
@@ -6617,6 +6657,10 @@
     {
      "name": "Prestige Pulsefire Thresh (2022)",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_38.jpg"
+    },
+    {
+     "name": "Lunar Emperor Thresh",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_39.jpg"
     }
    ],
    "new": false
@@ -8141,6 +8185,10 @@
     {
      "name": "Crime City Nightmare Zyra",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_16.jpg"
+    },
+    {
+     "name": "Mythmaker Zyra",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_36.jpg"
     }
    ],
    "new": false
