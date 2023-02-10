@@ -1,5 +1,5 @@
 {
- "version": "13.1.1",
+ "version": "13.3.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -55,7 +55,7 @@
    "id": "Ahri",
    "name": "Ahri",
    "title": "the Nine-Tailed Fox",
-   "lore": "Innately connected to the latent power of Runeterra, Ahri is a vastaya who can reshape magic into orbs of raw energy. She revels in toying with her prey by manipulating their emotions before devouring their life essence. Despite her predatory nature, Ahri retains a sense of empathy as she receives flashes of memory from each soul she consumes.",
+   "lore": "Innately connected to the magic of the spirit realm, Ahri is a fox-like vastaya who can manipulate her prey's emotions and consume their essence—receiving flashes of their memory and insight from each soul she consumes. Once a powerful yet wayward predator, Ahri is now traveling the world in search of remnants of her ancestors while also trying to replace her stolen memories with ones of her own making.",
    "thumbnail": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ahri_0.jpg",
    "skins": [
     {
@@ -357,6 +357,10 @@
     {
      "name": "Porcelain Amumu",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_34.jpg"
+    },
+    {
+     "name": "Heartache Amumu",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_44.jpg"
     }
    ],
    "new": false
@@ -949,6 +953,10 @@
     {
      "name": "Snow Moon Caitlyn",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_30.jpg"
+    },
+    {
+     "name": "Heartthrob Caitlyn",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_39.jpg"
     }
    ],
    "new": false
@@ -7343,6 +7351,10 @@
     {
      "name": "Arcane Vi",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vi_29.jpg"
+    },
+    {
+     "name": "Heartache Vi",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vi_30.jpg"
     }
    ],
    "new": false
