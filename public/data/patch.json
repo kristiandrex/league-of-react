@@ -1,5 +1,5 @@
 {
- "version": "13.3.1",
+ "version": "13.4.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -1775,6 +1775,10 @@
     {
      "name": "Prestige Fuzz Fizz (2022)",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_25.jpg"
+    },
+    {
+     "name": "Astronaut Fizz",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_26.jpg"
     }
    ],
    "new": false
@@ -2367,6 +2371,10 @@
     {
      "name": "Old God Ivern",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_11.jpg"
+    },
+    {
+     "name": "Astronaut Ivern",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_20.jpg"
     }
    ],
    "new": false
@@ -3199,6 +3207,10 @@
     {
      "name": "DWG Kennen",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_23.jpg"
+    },
+    {
+     "name": "Astronaut Kennen",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_25.jpg"
     }
    ],
    "new": false
@@ -5949,6 +5961,10 @@
     {
      "name": "Resistance Singed",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_10.jpg"
+    },
+    {
+     "name": "Astronaut Singed",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_19.jpg"
     }
    ],
    "new": false
@@ -7681,6 +7697,10 @@
     {
      "name": "Arcana Xerath",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xerath_12.jpg"
+    },
+    {
+     "name": "Astronaut Xerath",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xerath_21.jpg"
     }
    ],
    "new": false
