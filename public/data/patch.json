@@ -1,5 +1,5 @@
 {
- "version": "13.4.1",
+ "version": "13.5.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -1083,6 +1083,10 @@
     {
      "name": "Shan Hai Scrolls Cho'Gath",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_14.jpg"
+    },
+    {
+     "name": "Broken Covenant Cho'Gath",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_23.jpg"
     }
    ],
    "new": false
@@ -4177,6 +4181,14 @@
     {
      "name": "Prestige Bewitching Miss Fortune (2022)",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_33.jpg"
+    },
+    {
+     "name": "Broken Covenant Miss Fortune",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_40.jpg"
+    },
+    {
+     "name": "Prestige Broken Covenant Miss Fortune",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_41.jpg"
     }
    ],
    "new": false
@@ -4669,6 +4681,10 @@
     {
      "name": "Hextech Nocturne",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nocturne_16.jpg"
+    },
+    {
+     "name": "Broken Covenant Nocturne",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nocturne_17.jpg"
     }
    ],
    "new": false
@@ -5141,6 +5157,10 @@
     {
      "name": "Arcana Rakan",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rakan_18.jpg"
+    },
+    {
+     "name": "Broken Covenant Rakan",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rakan_27.jpg"
     }
    ],
    "new": false
@@ -5447,6 +5467,10 @@
     {
      "name": "Prestige Valiant Sword Riven (2022)",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_45.jpg"
+    },
+    {
+     "name": "Broken Covenant Riven",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_55.jpg"
     }
    ],
    "new": false
@@ -7497,6 +7521,10 @@
     {
      "name": "Cafe Cuties Vladimir",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vladimir_30.jpg"
+    },
+    {
+     "name": "Broken Covenant Vladimir",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vladimir_39.jpg"
     }
    ],
    "new": false
@@ -7659,6 +7687,10 @@
     {
      "name": "Arcana Xayah",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_28.jpg"
+    },
+    {
+     "name": "Broken Covenant Xayah",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_37.jpg"
     }
    ],
    "new": false
