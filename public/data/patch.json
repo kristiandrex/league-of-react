@@ -1,5 +1,5 @@
 {
- "version": "13.5.1",
+ "version": "13.6.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -1605,6 +1605,10 @@
     {
      "name": "Porcelain Protector Ezreal",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_25.jpg"
+    },
+    {
+     "name": "Faerie Court Ezreal",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_33.jpg"
     }
    ],
    "new": false
@@ -1721,6 +1725,10 @@
     {
      "name": "Bewitching Fiora",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiora_60.jpg"
+    },
+    {
+     "name": "Faerie Court Fiora",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiora_69.jpg"
     }
    ],
    "new": false
@@ -2837,6 +2845,10 @@
     {
      "name": "Marauder Kalista",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kalista_5.jpg"
+    },
+    {
+     "name": "Faerie Court Kalista",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kalista_14.jpg"
     }
    ],
    "new": false
@@ -2899,6 +2911,10 @@
     {
      "name": "Tranquility Dragon Karma",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karma_44.jpg"
+    },
+    {
+     "name": "Faerie Queen Karma",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karma_54.jpg"
     }
    ],
    "new": false
@@ -3061,6 +3077,14 @@
     {
      "name": "High Noon Katarina",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_37.jpg"
+    },
+    {
+     "name": "Faerie Court Katarina",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_47.jpg"
+    },
+    {
+     "name": "Prestige Faerie Court Katarina",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_48.jpg"
     }
    ],
    "new": false
@@ -4102,6 +4126,24 @@
     }
    ],
    "new": false
+  },
+  {
+   "id": "Milio",
+   "name": "Milio",
+   "title": "The Gentle Flame",
+   "lore": "Milio is a warmhearted boy from Ixtal who has, despite his young age, mastered the fire axiom and discovered something new: soothing fire. With this newfound power, Milio plans to help his family escape their exile by joining the Yun Tal—just like his grandmother once did. Having traveled through the Ixtal jungles to the capital of Ixaocan, Milio now prepares to face the Vidalion and join the Yun Tal, unaware of the trials—and dangers—that await him.",
+   "thumbnail": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Milio_0.jpg",
+   "skins": [
+    {
+     "name": "default",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Milio_0.jpg"
+    },
+    {
+     "name": "Faerie Court Milio",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Milio_1.jpg"
+    }
+   ],
+   "new": true
   },
   {
    "id": "MissFortune",
@@ -5739,6 +5781,10 @@
     {
      "name": "Prestige Ocean Song Seraphine",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Seraphine_15.jpg"
+    },
+    {
+     "name": "Faerie Court Seraphine",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Seraphine_24.jpg"
     }
    ],
    "new": false
@@ -5889,6 +5935,10 @@
     {
      "name": "Shockblade Shen",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shen_40.jpg"
+    },
+    {
+     "name": "Ashen Guardian Shen",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shen_49.jpg"
     }
    ],
    "new": false
