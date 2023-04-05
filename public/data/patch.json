@@ -1,5 +1,5 @@
 {
- "version": "13.6.1",
+ "version": "13.7.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -3311,6 +3311,10 @@
     {
      "name": "Porcelain Kindred",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_12.jpg"
+    },
+    {
+     "name": "Woof and Lamb Kindred",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_22.jpg"
     }
    ],
    "new": false
@@ -3337,6 +3341,10 @@
     {
      "name": "Marauder Kled",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kled_9.jpg"
+    },
+    {
+     "name": "Kibble-Head Kled",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kled_18.jpg"
     }
    ],
    "new": false
@@ -4143,7 +4151,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Milio_1.jpg"
     }
    ],
-   "new": true
+   "new": false
   },
   {
    "id": "MissFortune",
@@ -4659,6 +4667,10 @@
     {
      "name": "Ocean Song Nidalee",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_29.jpg"
+    },
+    {
+     "name": "Kittalee",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_39.jpg"
     }
    ],
    "new": false
@@ -8005,6 +8017,10 @@
     {
      "name": "EDG Yuumi",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yuumi_37.jpg"
+    },
+    {
+     "name": "Shiba Yuumi",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yuumi_39.jpg"
     }
    ],
    "new": false
