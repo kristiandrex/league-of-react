@@ -1,5 +1,5 @@
 {
- "version": "13.8.1",
+ "version": "13.9.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -4143,6 +4143,10 @@
     {
      "name": "Prestige Spirit Blossom Master Yi",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_53.jpg"
+    },
+    {
+     "name": "Inkshadow Master Yi",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_89.jpg"
     }
    ],
    "new": false
@@ -7661,6 +7665,10 @@
     {
      "name": "Prestige Duality Dragon Volibear",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_9.jpg"
+    },
+    {
+     "name": "Inkshadow Volibear",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_19.jpg"
     }
    ],
    "new": false
@@ -7943,6 +7951,10 @@
     {
      "name": "Inkshadow Yasuo",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_56.jpg"
+    },
+    {
+     "name": "Prestige Inkshadow Yasuo",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_57.jpg"
     }
    ],
    "new": false
