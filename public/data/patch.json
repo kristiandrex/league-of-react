@@ -1,5 +1,5 @@
 {
- "version": "13.9.1",
+ "version": "13.10.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -125,6 +125,10 @@
     {
      "name": "Arcana Ahri",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_66.jpg"
+    },
+    {
+     "name": "Snow Moon Ahri",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_76.jpg"
     }
    ],
    "new": false
@@ -4417,6 +4421,10 @@
     {
      "name": "Star Nemesis Morgana",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Morgana_50.jpg"
+    },
+    {
+     "name": "Snow Moon Morgana",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Morgana_60.jpg"
     }
    ],
    "new": false
@@ -7235,6 +7243,10 @@
     {
      "name": "High Noon Varus",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Varus_34.jpg"
+    },
+    {
+     "name": "Snow Moon Varus",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Varus_44.jpg"
     }
    ],
    "new": false
