@@ -1,5 +1,5 @@
 {
- "version": "13.10.1",
+ "version": "13.11.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -47,6 +47,14 @@
     {
      "name": "Lunar Eclipse Aatrox",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_21.jpg"
+    },
+    {
+     "name": "DRX Aatrox",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_30.jpg"
+    },
+    {
+     "name": "Prestige DRX Aatrox",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_31.jpg"
     }
    ],
    "new": false
@@ -207,6 +215,10 @@
     {
      "name": "Star Guardian Akali",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_61.jpg"
+    },
+    {
+     "name": "DRX Akali",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_68.jpg"
     }
    ],
    "new": false
@@ -601,6 +613,10 @@
     {
      "name": "Lunar Empress Ashe",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_52.jpg"
+    },
+    {
+     "name": "DRX Ashe",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_63.jpg"
     }
    ],
    "new": false
@@ -965,6 +981,10 @@
     {
      "name": "Heartthrob Caitlyn",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_39.jpg"
+    },
+    {
+     "name": "DRX Caitlyn",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_48.jpg"
     }
    ],
    "new": false
@@ -3331,6 +3351,10 @@
     {
      "name": "Woof and Lamb Kindred",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_22.jpg"
+    },
+    {
+     "name": "DRX Kindred",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_23.jpg"
     }
    ],
    "new": false
@@ -4077,6 +4101,10 @@
     {
      "name": "Astronaut Maokai",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_24.jpg"
+    },
+    {
+     "name": "DRX Maokai",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_33.jpg"
     }
    ],
    "new": false
