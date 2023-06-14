@@ -1,5 +1,5 @@
 {
- "version": "13.11.1",
+ "version": "13.12.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -719,6 +719,10 @@
     {
      "name": "Cafe Cuties Bard",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Bard_17.jpg"
+    },
+    {
+     "name": "Shan Hai Scrolls Bard",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Bard_26.jpg"
     }
    ],
    "new": false
@@ -3451,6 +3455,10 @@
     {
      "name": "Zap'Maw",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_37.jpg"
+    },
+    {
+     "name": "Shan Hai Scrolls Kog'Maw",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_46.jpg"
     }
    ],
    "new": false
@@ -3657,6 +3665,10 @@
     {
      "name": "High Noon Leona",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_34.jpg"
+    },
+    {
+     "name": "Crystalis Motus Leona",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_50.jpg"
     }
    ],
    "new": false
@@ -3679,6 +3691,10 @@
     {
      "name": "Nightbringer Lillia",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lillia_10.jpg"
+    },
+    {
+     "name": "Shan Hai Scrolls Lillia",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lillia_19.jpg"
     }
    ],
    "new": false
@@ -6569,6 +6585,10 @@
     {
      "name": "High Noon Tahm Kench",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_20.jpg"
+    },
+    {
+     "name": "Shan Hai Scrolls Tahm Kench",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_30.jpg"
     }
    ],
    "new": false
