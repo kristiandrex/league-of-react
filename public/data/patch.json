@@ -1,5 +1,5 @@
 {
- "version": "13.12.1",
+ "version": "13.13.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -435,6 +435,10 @@
     {
      "name": "Bewitching Batnivia",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_37.jpg"
+    },
+    {
+     "name": "Victorious Anivia",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_46.jpg"
     }
    ],
    "new": false
@@ -3001,6 +3005,10 @@
     {
      "name": "Pentakill III: Lost Chapter Karthus",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karthus_17.jpg"
+    },
+    {
+     "name": "Elderwood Karthus",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karthus_26.jpg"
     }
    ],
    "new": false
@@ -4345,6 +4353,10 @@
     {
      "name": "Battle Academia Wukong",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_7.jpg"
+    },
+    {
+     "name": "Elderwood Wukong",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_16.jpg"
     }
    ],
    "new": false
@@ -4973,6 +4985,10 @@
     {
      "name": "Orbeeanna",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_20.jpg"
+    },
+    {
+     "name": "Star Guardian Orianna",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_29.jpg"
     }
    ],
    "new": false
@@ -5873,6 +5889,10 @@
     {
      "name": "Faerie Court Seraphine",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Seraphine_24.jpg"
+    },
+    {
+     "name": "Star Guardian Seraphine",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Seraphine_34.jpg"
     }
    ],
    "new": false
