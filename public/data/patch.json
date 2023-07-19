@@ -1,5 +1,5 @@
 {
- "version": "13.13.1",
+ "version": "13.14.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -3941,6 +3941,10 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_29.jpg"
     },
     {
+     "name": "Soul Fighter Lux",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_38.jpg"
+    },
+    {
      "name": "Prestige Battle Academia Lux (2022)",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_39.jpg"
     },
@@ -4484,6 +4488,24 @@
     }
    ],
    "new": false
+  },
+  {
+   "id": "Naafiri",
+   "name": "Naafiri",
+   "title": "the Hound of a Hundred Bites",
+   "lore": "Across the sands of Shurima, a chorus of howls rings out. It is the call of the dune hounds, voracious predators who form packs and compete for the right to hunt in these barren lands. Among them, one pack stands above all, for they are driven not only by canine instincts, but by the ancient power of the Darkin.",
+   "thumbnail": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Naafiri_0.jpg",
+   "skins": [
+    {
+     "name": "default",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Naafiri_0.jpg"
+    },
+    {
+     "name": "Soul Fighter Naafiri",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Naafiri_1.jpg"
+    }
+   ],
+   "new": true
   },
   {
    "id": "Nami",
@@ -5177,6 +5199,14 @@
     {
      "name": "Empyrean Pyke",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_45.jpg"
+    },
+    {
+     "name": "Soul Fighter Pyke",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_53.jpg"
+    },
+    {
+     "name": "Prestige Soul Fighter Pyke",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_54.jpg"
     }
    ],
    "new": false
@@ -5743,6 +5773,10 @@
     {
      "name": "High Noon Samira",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Samira_20.jpg"
+    },
+    {
+     "name": "Soul Fighter Samira",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Samira_30.jpg"
     }
    ],
    "new": false
@@ -5847,6 +5881,10 @@
     {
      "name": "Bewitching Senna",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_36.jpg"
+    },
+    {
+     "name": "Star Guardian Senna",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_46.jpg"
     }
    ],
    "new": false
@@ -5931,6 +5969,10 @@
     {
      "name": "Spirit Blossom Sett",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_38.jpg"
+    },
+    {
+     "name": "Soul Fighter Sett",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_45.jpg"
     }
    ],
    "new": false
