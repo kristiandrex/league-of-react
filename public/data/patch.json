@@ -1,5 +1,5 @@
 {
- "version": "13.14.1",
+ "version": "13.15.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -1563,6 +1563,10 @@
     {
      "name": "Spirit Blossom Evelynn",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_32.jpg"
+    },
+    {
+     "name": "Soul Fighter Evelynn",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_42.jpg"
     }
    ],
    "new": false
@@ -2197,6 +2201,10 @@
     {
      "name": "Cafe Cuties Gwen",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gwen_11.jpg"
+    },
+    {
+     "name": "Soul Fighter Gwen",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gwen_20.jpg"
     }
    ],
    "new": false
@@ -2721,6 +2729,10 @@
     {
      "name": "Empyrean Jhin",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_25.jpg"
+    },
+    {
+     "name": "Soul Fighter Jhin",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_36.jpg"
     }
    ],
    "new": false
@@ -4505,7 +4517,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Naafiri_1.jpg"
     }
    ],
-   "new": true
+   "new": false
   },
   {
    "id": "Nami",
@@ -6031,6 +6043,14 @@
     {
      "name": "Winterblessed Shaco",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_33.jpg"
+    },
+    {
+     "name": "Soul Fighter Shaco",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_43.jpg"
+    },
+    {
+     "name": "Prestige Soul Fighter Shaco",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_44.jpg"
     }
    ],
    "new": false
@@ -7641,6 +7661,10 @@
     {
      "name": "King Viego",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viego_21.jpg"
+    },
+    {
+     "name": "Soul Fighter Viego",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viego_30.jpg"
     }
    ],
    "new": false
