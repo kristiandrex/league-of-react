@@ -1,5 +1,5 @@
 {
- "version": "13.15.1",
+ "version": "13.16.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -3211,6 +3211,10 @@
     {
      "name": "Sun-Eater Kayle",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayle_42.jpg"
+    },
+    {
+     "name": "Immortal Journey Kayle",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayle_57.jpg"
     }
    ],
    "new": false
@@ -6151,6 +6155,10 @@
     {
      "name": "Ruined Shyvana",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shyvana_8.jpg"
+    },
+    {
+     "name": "Immortal Journey Shyvana",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shyvana_17.jpg"
     }
    ],
    "new": false
@@ -6425,6 +6433,14 @@
     {
      "name": "Star Guardian Sona",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_35.jpg"
+    },
+    {
+     "name": "Immortal Journey Sona",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_45.jpg"
+    },
+    {
+     "name": "Prestige Immortal Journey Sona",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_46.jpg"
     }
    ],
    "new": false
@@ -6495,6 +6511,10 @@
     {
      "name": "Spirit Blossom Soraka",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Soraka_27.jpg"
+    },
+    {
+     "name": "Immortal Journey Soraka",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Soraka_37.jpg"
     }
    ],
    "new": false
@@ -8303,6 +8323,10 @@
     {
      "name": "Empyrean Zed",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_38.jpg"
+    },
+    {
+     "name": "Immortal Journey Zed",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_49.jpg"
     }
    ],
    "new": false
@@ -8325,6 +8349,10 @@
     {
      "name": "Ocean Song Zeri",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zeri_10.jpg"
+    },
+    {
+     "name": "Immortal Journey Zeri",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zeri_19.jpg"
     }
    ],
    "new": false
