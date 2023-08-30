@@ -1,5 +1,5 @@
 {
- "version": "13.16.1",
+ "version": "13.17.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -745,6 +745,10 @@
     {
      "name": "Battle Boss Bel'Veth",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Belveth_1.jpg"
+    },
+    {
+     "name": "Cosmic Matriarch Bel'Veth",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Belveth_10.jpg"
     }
    ],
    "new": false
@@ -2733,6 +2737,10 @@
     {
      "name": "Soul Fighter Jhin",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_36.jpg"
+    },
+    {
+     "name": "Dark Cosmic Erasure Jhin",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_37.jpg"
     }
    ],
    "new": false
@@ -4685,6 +4693,10 @@
     {
      "name": "Fright Night Nautilus",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_18.jpg"
+    },
+    {
+     "name": "Cosmic Paladin Nautilus",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_27.jpg"
     }
    ],
    "new": false
@@ -4915,6 +4927,10 @@
     {
      "name": "Nunu \u0026 Beelump",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_26.jpg"
+    },
+    {
+     "name": "Cosmic Paladins Nunu \u0026 Willump",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_35.jpg"
     }
    ],
    "new": false
@@ -6263,6 +6279,10 @@
     {
      "name": "High Noon Sion",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sion_30.jpg"
+    },
+    {
+     "name": "Cosmic Paladin Sion",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sion_40.jpg"
     }
    ],
    "new": false
