@@ -1,5 +1,5 @@
 {
- "version": "13.17.1",
+ "version": "13.18.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -873,6 +873,10 @@
     {
      "name": "Prestige Debonair Brand",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Brand_22.jpg"
+    },
+    {
+     "name": "Street Demons Brand",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Brand_33.jpg"
     }
    ],
    "new": false
@@ -918,6 +922,24 @@
     }
    ],
    "new": false
+  },
+  {
+   "id": "Briar",
+   "name": "Briar",
+   "title": "the Restrained Hunger",
+   "lore": "A failed experiment by the Black Rose, Briar's uncontrollable bloodlust required a special pillory to focus her frenzied mind. After years of confinement, this living weapon broke free from her restraints and unleashed herself into the world. Now she's controlled by no one—following only her hunger for knowledge and blood—and relishes the opportunities to let loose, even if reining back the frenzy isn't easy.",
+   "thumbnail": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Briar_0.jpg",
+   "skins": [
+    {
+     "name": "default",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Briar_0.jpg"
+    },
+    {
+     "name": "Street Demons Briar",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Briar_1.jpg"
+    }
+   ],
+   "new": true
   },
   {
    "id": "Caitlyn",
@@ -1351,6 +1373,10 @@
     {
      "name": "Frozen Prince Mundo",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/DrMundo_10.jpg"
+    },
+    {
+     "name": "Street Demons Dr. Mundo",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/DrMundo_21.jpg"
     }
    ],
    "new": false
@@ -4735,6 +4761,10 @@
     {
      "name": "Bewitching Neeko",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_22.jpg"
+    },
+    {
+     "name": "Street Demons Neeko",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_31.jpg"
     }
    ],
    "new": false
@@ -5601,6 +5631,10 @@
     {
      "name": "Sentinel Rengar",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rengar_30.jpg"
+    },
+    {
+     "name": "Street Demons Rengar",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rengar_40.jpg"
     }
    ],
    "new": false
@@ -6741,6 +6775,10 @@
     {
      "name": "Star Guardian Taliyah",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taliyah_11.jpg"
+    },
+    {
+     "name": "Crystalis Motus Taliyah",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taliyah_21.jpg"
     }
    ],
    "new": false
@@ -8561,6 +8599,10 @@
     {
      "name": "Mythmaker Zyra",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_36.jpg"
+    },
+    {
+     "name": "Street Demons Zyra",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_46.jpg"
     }
    ],
    "new": false
