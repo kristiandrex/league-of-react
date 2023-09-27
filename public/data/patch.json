@@ -1,5 +1,5 @@
 {
- "version": "13.18.1",
+ "version": "13.19.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -939,7 +939,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Briar_1.jpg"
     }
    ],
-   "new": true
+   "new": false
   },
   {
    "id": "Caitlyn",
@@ -1435,6 +1435,10 @@
     {
      "name": "Fright Night Draven",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_39.jpg"
+    },
+    {
+     "name": "La Ilusión Draven",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_48.jpg"
     }
    ],
    "new": false
@@ -2085,6 +2089,10 @@
     {
      "name": "Elderwood Gnar",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_22.jpg"
+    },
+    {
+     "name": "La Ilusión Gnar",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_31.jpg"
     }
    ],
    "new": false
@@ -4835,6 +4843,10 @@
     {
      "name": "Kittalee",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_39.jpg"
+    },
+    {
+     "name": "La Ilusión Nidalee",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_48.jpg"
     }
    ],
    "new": false
@@ -5311,6 +5323,10 @@
     {
      "name": "Lunar Empress Qiyana",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_30.jpg"
+    },
+    {
+     "name": "La Ilusión Qiyana",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_40.jpg"
     }
    ],
    "new": false
@@ -5523,6 +5539,14 @@
     {
      "name": "Fright Night Renata Glasc",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_10.jpg"
+    },
+    {
+     "name": "La Ilusión Renata Glasc",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_20.jpg"
+    },
+    {
+     "name": "Prestige La Ilusión Renata Glasc",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_21.jpg"
     }
    ],
    "new": false
@@ -8465,6 +8489,10 @@
     {
      "name": "BZZZiggs",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_24.jpg"
+    },
+    {
+     "name": "La Ilusión Ziggs",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_33.jpg"
     }
    ],
    "new": false
