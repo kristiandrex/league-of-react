@@ -1,5 +1,5 @@
 {
- "version": "13.19.1",
+ "version": "13.20.1",
  "champions": [
   {
    "id": "Aatrox",
@@ -219,6 +219,14 @@
     {
      "name": "DRX Akali",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_68.jpg"
+    },
+    {
+     "name": "Coven Akali",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_70.jpg"
+    },
+    {
+     "name": "Prestige Coven Akali",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_71.jpg"
     }
    ],
    "new": false
@@ -591,7 +599,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_8.jpg"
     },
     {
-     "name": "Championship Ashe",
+     "name": "Worlds 2017 Ashe",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_9.jpg"
     },
     {
@@ -1535,6 +1543,10 @@
     {
      "name": "Withered Rose Elise",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Elise_15.jpg"
+    },
+    {
+     "name": "Coven Elise",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Elise_24.jpg"
     }
    ],
    "new": false
@@ -2675,6 +2687,10 @@
     {
      "name": "Empyrean Jax",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_22.jpg"
+    },
+    {
+     "name": "Neo PAX Jax",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_32.jpg"
     }
    ],
    "new": false
@@ -2933,7 +2949,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kalista_1.jpg"
     },
     {
-     "name": "Championship Kalista",
+     "name": "Worlds 2015 Kalista",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kalista_2.jpg"
     },
     {
@@ -3377,7 +3393,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Khazix_4.jpg"
     },
     {
-     "name": "Championship Kha'Zix",
+     "name": "Worlds 2018 Kha'Zix",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Khazix_11.jpg"
     },
     {
@@ -3573,7 +3589,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_20.jpg"
     },
     {
-     "name": "Championship LeBlanc",
+     "name": "Worlds 2020 LeBlanc",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_29.jpg"
     },
     {
@@ -4473,6 +4489,10 @@
     {
      "name": "Ashen Graveknight Mordekaiser",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_42.jpg"
+    },
+    {
+     "name": "Old God Mordekaiser",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_44.jpg"
     }
    ],
    "new": false
@@ -4619,6 +4639,10 @@
     {
      "name": "Prestige Space Groove Nami",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nami_42.jpg"
+    },
+    {
+     "name": "Coven Nami",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nami_51.jpg"
     }
    ],
    "new": false
@@ -4865,6 +4889,10 @@
     {
      "name": "Star Guardian Nilah",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nilah_1.jpg"
+    },
+    {
+     "name": "Coven Nilah",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nilah_11.jpg"
     }
    ],
    "new": false
@@ -5411,6 +5439,10 @@
     {
      "name": "Broken Covenant Rakan",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rakan_27.jpg"
+    },
+    {
+     "name": "Redeemed Star Guardian Rakan",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rakan_36.jpg"
     }
    ],
    "new": false
@@ -5613,6 +5645,10 @@
     {
      "name": "Dawnbringer Renekton",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renekton_33.jpg"
+    },
+    {
+     "name": "Worlds 2023 Renekton",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renekton_42.jpg"
     }
    ],
    "new": false
@@ -5687,7 +5723,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_3.jpg"
     },
     {
-     "name": "Championship Riven",
+     "name": "Worlds 2012 Riven",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_4.jpg"
     },
     {
@@ -5699,7 +5735,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_6.jpg"
     },
     {
-     "name": "Championship Riven 2016",
+     "name": "Worlds 2016 Riven",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_7.jpg"
     },
     {
@@ -5827,7 +5863,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_10.jpg"
     },
     {
-     "name": "Championship Ryze",
+     "name": "Worlds 2019 Ryze",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_11.jpg"
     },
     {
@@ -6219,7 +6255,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shyvana_4.jpg"
     },
     {
-     "name": "Championship Shyvana",
+     "name": "Worlds 2014 Shyvana",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shyvana_5.jpg"
     },
     {
@@ -6731,6 +6767,10 @@
     {
      "name": "Spirit Blossom Syndra",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Syndra_44.jpg"
+    },
+    {
+     "name": "Coven Syndra",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Syndra_54.jpg"
     }
    ],
    "new": false
@@ -6985,7 +7025,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_1.jpg"
     },
     {
-     "name": "Championship Thresh",
+     "name": "Worlds 2013 Thresh",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_2.jpg"
     },
     {
@@ -8037,6 +8077,10 @@
     {
      "name": "Broken Covenant Xayah",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_37.jpg"
+    },
+    {
+     "name": "Redeemed Star Guardian Xayah",
+     "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_38.jpg"
     }
    ],
    "new": false
@@ -8379,7 +8423,7 @@
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_3.jpg"
     },
     {
-     "name": "Championship Zed",
+     "name": "Worlds 2016 Zed",
      "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_10.jpg"
     },
     {
