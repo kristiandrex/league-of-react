@@ -7,24 +7,29 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
+
+    env:
+      GIT_USER_NAME: ${{ secrets.GIT_USER_NAME }}
+      GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
+
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 16.x
+      - name: Use Node.js 22.x
         uses: actions/setup-node@v2
         with:
-          node-version: "16"
-          cache: "npm"
-      - run: npm install
+          node-version: 22
+          cache: "pnpm"
+      - run: pnpm install
       - name: Download latest patch
         id: download
-        run: npm run update
+        run: pnpm run update
       - name: Commit latest patch
         if: ${{ steps.download.outputs.should-commit == 'true' }}
         env:
           PATCH: ${{ steps.download.outputs.patch }}
         run: |
-          git config user.name kristiandrex
-          git config user.email cristiandrestorres@gmail.com
+          git config user.name ${{ env.GIT_USER_NAME }}
+          git config user.email ${{ env.GIT_USER_EMAIL }}
           git add -A
           git commit -m "Update to patch $PATCH"
           git push
