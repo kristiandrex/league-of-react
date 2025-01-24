@@ -14,15 +14,24 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
       - name: Use Node.js 22.x
         uses: actions/setup-node@v2
         with:
           node-version: 22
           cache: "pnpm"
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
       - run: pnpm install
+
       - name: Download latest patch
         id: download
         run: pnpm run update
+
       - name: Commit latest patch
         if: ${{ steps.download.outputs.should-commit == 'true' }}
         env:
