@@ -7,23 +7,37 @@ on:
 jobs:
   screenshots:
     runs-on: ubuntu-latest
+
+    env:
+      GIT_USER_NAME: ${{ secrets.GIT_USER_NAME }}
+      GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
+
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Use Node.js 22.x
+        uses: actions/setup-node@v4
         with:
-          node-version: "16"
-      - run: npm install
+          node-version: 22
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install
+
       - name: Take screenshots
         id: screenshots
         run: npm run screenshots
+
       - name: Commit screenshots
         if: ${{ steps.screenshots.outputs.should-commit == 'true' }}
         env:
           PATCH: ${{ steps.screenshots.outputs.patch }}
         run: |
-          git config user.name kristiandrex
-          git config user.email cristiandrestorres@gmail.com
+          git config user.name ${{ env.GIT_USER_NAME }}
+          git config user.email ${{ env.GIT_USER_EMAIL }}
           git add -A
           git commit -m "Take screenshots of patch $PATCH"
           git push
